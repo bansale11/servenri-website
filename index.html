@@ -3,412 +3,823 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ServeNRI: Complete India Property, Legal and Banking Services, legal, banking, and government services for NRI families. Headquartered in Jaipur with a branch in Atlanta, USA." />
-  <title>ServeNRI: Complete India Services for NRI Families</title>
+  <meta name="description" content="ServeNRI: Complete property management, legal, banking, and government services for NRI families. Headquartered in Jaipur with a branch in Atlanta, USA." />
+  <title>ServeNRI — India Services for NRI Families</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ======================================================
-     NAVIGATION
-====================================================== -->
-<nav class="site-nav" id="siteNav">
-  <div class="nav-inner">
+<!-- ============================================================
+     NAV
+============================================================ -->
+<nav class="nav" id="siteNav">
+  <div class="shell nav-inner">
     <a href="#home" class="brand">
-      <svg class="brand-mark" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-        <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M10 1C10 1 6 7.5 6 10a4 4 0 008 0c0-2.5-4-9-4-9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M1.5 10h17" stroke="currentColor" stroke-width="1.5"/>
-      </svg>
+      <div class="brand-mark">S</div>
       <span class="brand-name">Serve<em>NRI</em></span>
     </a>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#testimonials">Clients</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="nav-cta">Schedule a Call</a></li>
-    </ul>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-cta" id="navCta">
+      <a href="#contact" class="btn btn-primary">Schedule a Call
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<!-- ======================================================
+<!-- ============================================================
      HERO
-====================================================== -->
+============================================================ -->
 <section class="hero" id="home">
-  <div class="hero-inner">
-    <div class="hero-body">
-      <p class="overline">Trusted NRI Services · Est. 2014</p>
-      <h1>Your India.<br><em>Our Responsibility.</em></h1>
-      <p class="hero-lead">Property management, legal representation, banking liaison, and government services, managed for NRI families worldwide through one dedicated team on the ground in India.</p>
+  <div class="shell hero-grid">
+
+    <!-- LEFT: Copy -->
+    <div>
+      <span class="eyebrow">
+        <span class="dot"></span>
+        Serving 2,000+ NRI families across 40+ countries
+      </span>
+      <h1 class="h1">
+        Your India.<br/>
+        <em>Our Responsibility.</em>
+      </h1>
+      <p class="hero-lead">
+        ServeNRI is a ground-operations firm built for Non-Resident Indians.
+        Property management, legal representation, banking liaison, and government
+        services — managed end-to-end by a dedicated team in Jaipur with a branch
+        in Atlanta, USA.
+      </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Schedule a Consultation</a>
-        <a href="#services" class="btn-text">
-          Explore Services
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <a href="#contact" class="btn btn-primary">
+          Schedule a Consultation
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn-link">
+          Explore services
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
         </a>
       </div>
-      <div class="hero-offices">
-        <span class="office-pill">
-          <span class="office-dot in"></span>
-          <strong>Jaipur, India</strong> &nbsp;Headquarters
-        </span>
-        <span class="office-sep">/</span>
-        <span class="office-pill">
-          <span class="office-dot us"></span>
-          <strong>Atlanta, USA</strong> &nbsp;Branch Office
-        </span>
+      <div class="hero-pills">
+        <span class="mono" style="color:var(--muted); align-self:center; margin-right:4px; font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">I'M BASED IN —</span>
+        <button class="pill" data-active="true" data-audience="us">🇺🇸 USA</button>
+        <button class="pill" data-audience="uk">🇬🇧 UK & Europe</button>
+        <button class="pill" data-audience="gulf">🇦🇪 Gulf Region</button>
+        <button class="pill" data-audience="sg">🇸🇬 Singapore &amp; APAC</button>
+        <button class="pill" data-audience="ca">🇨🇦 Canada</button>
       </div>
     </div>
 
-    <div class="hero-panel" aria-hidden="true">
-      <div class="hp-card">
-        <div class="hp-card-top">
-          <span class="hp-live">
-            <span class="hp-live-dot"></span>
-            Active Portfolio &middot; 2024
-          </span>
-          <span class="hp-verified">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M1.5 5.5l2.8 2.8L9.5 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Verified
-          </span>
+    <!-- RIGHT: Collage -->
+    <div class="collage" aria-hidden="true">
+      <div class="collage-card c-1">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Advisor and client meeting" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+        <div class="collage-placeholder" style="display:none"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);padding:6px 10px;background:var(--paper);border-radius:4px;border:1px solid var(--line)">Advisor meeting</span></div>
+      </div>
+      <div class="collage-card c-2">
+        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&q=80" alt="India property" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+        <div class="collage-placeholder" style="display:none"></div>
+      </div>
+      <div class="collage-card c-3">
+        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80" alt="Jaipur India" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+        <div class="collage-placeholder" style="display:none"></div>
+      </div>
+      <div class="collage-card c-4">
+        <div>
+          <div class="mono" style="color:var(--muted-2);margin-bottom:10px;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;">Est. 2014</div>
+          <div class="stat-num">2,000<sup>+</sup></div>
+          <div class="stat-label">NRI Families Served</div>
         </div>
-        <div class="hp-metrics">
-          <div class="hp-metric">
-            <strong>2,000<span>+</span></strong>
-            <span>NRI Families</span>
-          </div>
-          <div class="hp-metric">
-            <strong>40<span>+</span></strong>
-            <span>Countries</span>
-          </div>
-          <div class="hp-metric">
-            <strong>10<span> yrs</span></strong>
-            <span>Experience</span>
-          </div>
-        </div>
-        <div class="hp-divider"></div>
-        <div class="hp-coverage">
-          <span class="hp-cov-label">Primary States</span>
-          <div class="hp-states">
-            <span>Rajasthan</span><span>Punjab</span><span>Delhi NCR</span>
-            <span>Gujarat</span><span>Haryana</span><span>M.P.</span>
-          </div>
-        </div>
-        <div class="hp-divider"></div>
-        <div class="hp-svc-list">
-          <div class="hp-svc"><span class="hp-svc-dot"></span>Property Management</div>
-          <div class="hp-svc"><span class="hp-svc-dot"></span>Legal &amp; Compliance</div>
-          <div class="hp-svc"><span class="hp-svc-dot"></span>Banking Liaison</div>
-          <div class="hp-svc"><span class="hp-svc-dot"></span>Government Affairs</div>
+        <div class="stat-dots">
+          <div class="stat-dot" style="background:var(--gold)"></div>
+          <div class="stat-dot" style="background:rgba(255,255,255,0.2)"></div>
+          <div class="stat-dot" style="background:rgba(255,255,255,0.2)"></div>
+          <div class="stat-dot" style="background:rgba(255,255,255,0.2)"></div>
         </div>
       </div>
-      <div class="hp-grid-bg" aria-hidden="true"></div>
+      <div class="collage-badge">
+        <div>
+          <div style="font-style:italic;font-size:13px">10+</div>
+          <div style="font-size:10px;margin-top:2px;line-height:1.3">Years of<br>Service</div>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- ======================================================
+<!-- ============================================================
+     TRUST STRIP
+============================================================ -->
+<div class="trust-strip">
+  <div class="shell trust-inner">
+    <div class="trust-label">Trusted by families from</div>
+    <div class="trust-items">
+      <div class="trust-item">
+        <span class="t-num">2,000+</span>
+        <span class="t-desc">Families Served</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="t-num">40+</span>
+        <span class="t-desc">Countries</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="t-num">8</span>
+        <span class="t-desc">States Coverage</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="t-num">10+</span>
+        <span class="t-desc">Years in Operation</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="t-num">2</span>
+        <span class="t-desc">Offices (India &amp; USA)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
      SERVICES
-====================================================== -->
-<section class="services" id="services">
-  <div class="wrap">
-    <div class="section-intro">
-      <div class="section-intro-left">
-        <p class="overline">What We Do</p>
-        <h2>Six pillars of service.<br>One point of contact.</h2>
+============================================================ -->
+<section class="section" id="services">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">— What we do</div>
+        <h2 class="h2">Six pillars of service,<br/><em>one point of contact.</em></h2>
       </div>
-      <p class="section-intro-desc">End-to-end management across every dimension of your India-based needs, so you never chase multiple vendors or updates across time zones.</p>
+      <p class="section-desc">
+        Most NRIs juggle a property manager, a lawyer, a CA, and a government liaison —
+        often across time zones. ServeNRI consolidates all of it into one accountable
+        on-ground team with a single relationship manager assigned to your family.
+      </p>
     </div>
 
-    <div class="svc-layout">
-      <nav class="svc-nav" role="tablist" aria-label="Service categories">
-        <button class="svc-tab active" role="tab" data-svc="property" aria-selected="true" aria-controls="svc-property">
-          <span class="svc-num">01</span>
-          <span class="svc-name">Property Management</span>
-          <svg class="svc-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="svc-tab" role="tab" data-svc="legal" aria-selected="false" aria-controls="svc-legal">
-          <span class="svc-num">02</span>
-          <span class="svc-name">Legal &amp; Compliance</span>
-          <svg class="svc-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="svc-tab" role="tab" data-svc="banking" aria-selected="false" aria-controls="svc-banking">
-          <span class="svc-num">03</span>
-          <span class="svc-name">Banking &amp; Financial</span>
-          <svg class="svc-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="svc-tab" role="tab" data-svc="documentation" aria-selected="false" aria-controls="svc-documentation">
-          <span class="svc-num">04</span>
-          <span class="svc-name">Documentation</span>
-          <svg class="svc-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="svc-tab" role="tab" data-svc="government" aria-selected="false" aria-controls="svc-government">
-          <span class="svc-num">05</span>
-          <span class="svc-name">Government Liaison</span>
-          <svg class="svc-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="svc-tab" role="tab" data-svc="lifestyle" aria-selected="false" aria-controls="svc-lifestyle">
-          <span class="svc-num">06</span>
-          <span class="svc-name">Concierge &amp; Lifestyle</span>
-          <svg class="svc-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </nav>
+    <div class="services-layout">
+      <!-- Tab list -->
+      <div class="svc-list" role="tablist" aria-label="Service categories">
+        <div class="svc-row" data-active="true" data-svc="property" role="tab" tabindex="0" aria-selected="true">
+          <div class="svc-row-left">
+            <span class="svc-num">01</span>
+            <span class="svc-name">Property Management</span>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="svc-row" data-svc="legal" role="tab" tabindex="0" aria-selected="false">
+          <div class="svc-row-left">
+            <span class="svc-num">02</span>
+            <span class="svc-name">Legal &amp; Compliance</span>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="svc-row" data-svc="banking" role="tab" tabindex="0" aria-selected="false">
+          <div class="svc-row-left">
+            <span class="svc-num">03</span>
+            <span class="svc-name">Banking &amp; Financial</span>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="svc-row" data-svc="documentation" role="tab" tabindex="0" aria-selected="false">
+          <div class="svc-row-left">
+            <span class="svc-num">04</span>
+            <span class="svc-name">Documentation</span>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="svc-row" data-svc="government" role="tab" tabindex="0" aria-selected="false">
+          <div class="svc-row-left">
+            <span class="svc-num">05</span>
+            <span class="svc-name">Government Liaison</span>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+        <div class="svc-row" data-svc="lifestyle" role="tab" tabindex="0" aria-selected="false">
+          <div class="svc-row-left">
+            <span class="svc-num">06</span>
+            <span class="svc-name">Concierge &amp; Lifestyle</span>
+          </div>
+          <span class="svc-arrow">→</span>
+        </div>
+      </div>
 
-      <div class="svc-content">
+      <!-- Detail panel -->
+      <div class="svc-detail" id="svcDetail" aria-live="polite">
 
-        <div class="svc-panel active" id="svc-property" role="tabpanel">
-          <h3>Property Management</h3>
-          <p class="svc-desc">Complete on-ground management for your India properties, tenant relations, rent collection, maintenance, compliance, and regular reporting. You stay informed while we handle everything.</p>
-          <dl class="svc-items">
-            <div class="svc-item"><dt>Tenant Management &amp; Rent Collection</dt><dd>Rigorous tenant screening, lease execution, and timely rent collection with monthly digital statements remitted to your overseas account.</dd></div>
-            <div class="svc-item"><dt>Maintenance &amp; Repairs</dt><dd>Full coordination of plumbing, electrical, civil, and interior repairs through our verified vendor network, no contractor management required from your end.</dd></div>
-            <div class="svc-item"><dt>Regular Property Inspections</dt><dd>Scheduled on-site inspections with photo and video documentation delivered directly to you, full transparency on your property's condition.</dd></div>
-            <div class="svc-item"><dt>Buy / Sell Assistance</dt><dd>Market valuation, buyer and seller vetting, price negotiation, documentation, and complete transaction management, end to end.</dd></div>
-            <div class="svc-item"><dt>Society Coordination</dt><dd>Maintenance charges, society meetings, NOC applications, and community compliance, all handled without requiring your involvement.</dd></div>
-            <div class="svc-item"><dt>Security &amp; Encroachment Monitoring</dt><dd>Proactive monitoring to prevent unauthorized access, boundary disputes, and encroachment of vacant or occupied properties.</dd></div>
-          </dl>
-          <a href="#contact" class="svc-cta">Discuss your property <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <!-- 01 Property -->
+        <div class="svc-panel active" data-panel="property">
+          <div class="svc-detail-img">
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&q=80" alt="Property Management" loading="lazy" />
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="svc-detail-tag">01 / Property Management</span>
+            <span class="eyebrow" style="padding:4px 10px;font-size:11px;background:var(--gold-soft);border-color:transparent;color:var(--ink)">
+              <span class="dot" style="background:var(--accent)"></span>Most Requested
+            </span>
+          </div>
+          <h4>Complete on-ground management for your India properties.</h4>
+          <p>Tenant relations, rent collection, maintenance, compliance, and regular reporting — managed by our dedicated team. You stay informed while we handle everything.</p>
+          <div class="svc-checks">
+            <div class="svc-check">
+              <svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Tenant screening &amp; placement</span>
+            </div>
+            <div class="svc-check">
+              <svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Rent collection &amp; remittance</span>
+            </div>
+            <div class="svc-check">
+              <svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Maintenance &amp; repairs coordination</span>
+            </div>
+            <div class="svc-check">
+              <svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Regular property inspections</span>
+            </div>
+            <div class="svc-check">
+              <svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Buy / sell assistance</span>
+            </div>
+            <div class="svc-check">
+              <svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Society coordination</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-ghost" style="align-self:flex-start;margin-top:8px">
+            Discuss your property
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
         </div>
 
-        <div class="svc-panel" id="svc-legal" role="tabpanel">
-          <h3>Legal &amp; Compliance</h3>
-          <p class="svc-desc">Expert legal representation across India's complex regulatory landscape, protecting your property interests, resolving disputes, and keeping you compliant while you remain abroad.</p>
-          <dl class="svc-items">
-            <div class="svc-item"><dt>Property Legal Verification</dt><dd>Title search, encumbrance certificates, mutation records, and comprehensive due diligence before any property transaction.</dd></div>
-            <div class="svc-item"><dt>Dispute Resolution</dt><dd>Legal strategy, coordination with qualified attorneys, and representation in property, family, and civil disputes across our coverage states.</dd></div>
-            <div class="svc-item"><dt>Power of Attorney</dt><dd>Drafting, apostille guidance, notarization, registration, and active management of General and Special Powers of Attorney.</dd></div>
-            <div class="svc-item"><dt>Legal Documentation &amp; Contracts</dt><dd>Sale agreements, lease deeds, MOUs, and all legal instruments, professionally prepared and reviewed by our legal team.</dd></div>
-            <div class="svc-item"><dt>Statutory Approvals &amp; Compliance</dt><dd>RERA compliance, building permissions, occupancy certificates, and ongoing statutory filing and tax compliance management.</dd></div>
-          </dl>
-          <a href="#contact" class="svc-cta">Discuss legal support <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <!-- 02 Legal -->
+        <div class="svc-panel" data-panel="legal">
+          <div class="svc-detail-img">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80" alt="Legal Services" loading="lazy" />
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="svc-detail-tag">02 / Legal &amp; Compliance</span>
+          </div>
+          <h4>Expert legal representation across India's regulatory landscape.</h4>
+          <p>Protecting your property interests, resolving disputes, and keeping you compliant while you remain abroad. Our legal team operates across all primary coverage states.</p>
+          <div class="svc-checks">
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Property legal verification</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Dispute resolution</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Power of attorney (draft to active)</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Legal documentation &amp; contracts</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>RERA compliance</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Statutory approvals &amp; filings</span></div>
+          </div>
+          <a href="#contact" class="btn btn-ghost" style="align-self:flex-start;margin-top:8px">Discuss legal support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
-        <div class="svc-panel" id="svc-banking" role="tabpanel">
-          <h3>Banking &amp; Financial Services</h3>
-          <p class="svc-desc">Bridging your overseas financial life with India's banking ecosystem, from account management and FEMA compliance to rent remittance and tax handling.</p>
-          <dl class="svc-items">
-            <div class="svc-item"><dt>NRI Banking Assistance</dt><dd>Support for NRE, NRO, and FCNR account management, FEMA compliance, and account optimization for NRI-specific regulations.</dd></div>
-            <div class="svc-item"><dt>Account Setup Support</dt><dd>End-to-end assistance for opening, updating, and managing Indian bank accounts, fully coordinated without requiring your physical presence.</dd></div>
-            <div class="svc-item"><dt>Rent Remittance</dt><dd>Compliant repatriation of rental income to your overseas account in accordance with FEMA regulations, with TDS deduction and filing handled.</dd></div>
-            <div class="svc-item"><dt>Bill Payments &amp; Tax Management</dt><dd>Utility bills, property tax, society charges, advance tax, and TDS, managed proactively so nothing is missed or delayed.</dd></div>
-            <div class="svc-item"><dt>Financial Reporting</dt><dd>Monthly digital statements covering all income, expenses, and pending obligations related to your India-based assets.</dd></div>
-          </dl>
-          <a href="#contact" class="svc-cta">Discuss financial services <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <!-- 03 Banking -->
+        <div class="svc-panel" data-panel="banking">
+          <div class="svc-detail-img">
+            <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1200&q=80" alt="Banking Services" loading="lazy" />
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="svc-detail-tag">03 / Banking &amp; Financial</span>
+          </div>
+          <h4>Bridging your overseas financial life with India's banking ecosystem.</h4>
+          <p>From account management and FEMA compliance to rent remittance and tax handling — we ensure your India finances are always compliant and efficient.</p>
+          <div class="svc-checks">
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>NRE / NRO / FCNR account support</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Account setup (no presence needed)</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Rent remittance (FEMA-compliant)</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Bill payments &amp; tax management</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Monthly financial reporting</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>TDS deduction &amp; filing</span></div>
+          </div>
+          <a href="#contact" class="btn btn-ghost" style="align-self:flex-start;margin-top:8px">Discuss financial services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
-        <div class="svc-panel" id="svc-documentation" role="tabpanel">
-          <h3>Documentation &amp; Paperwork</h3>
-          <p class="svc-desc">India's documentation landscape is complex and unforgiving, a missing certificate can derail transactions worth crores. We manage the entire chain on your behalf.</p>
-          <dl class="svc-items">
-            <div class="svc-item"><dt>Property Documentation</dt><dd>Sale deeds, gift deeds, partition deeds, khata extracts, mutation applications, and stamp duty management across all coverage states.</dd></div>
-            <div class="svc-item"><dt>Identity &amp; KYC Processing</dt><dd>Aadhaar updates, PAN applications, passport-related services, and OCI/PIO card assistance, coordinated remotely on your behalf.</dd></div>
-            <div class="svc-item"><dt>Registration &amp; Filing</dt><dd>Property registration at Sub-Registrar offices, company filings, and court document processing managed by our on-ground team.</dd></div>
-            <div class="svc-item"><dt>End-to-End Document Management</dt><dd>Collection, verification, processing, submission, and follow-up, we manage every stage of the documentation lifecycle without exception.</dd></div>
-          </dl>
-          <a href="#contact" class="svc-cta">Discuss documentation <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <!-- 04 Documentation -->
+        <div class="svc-panel" data-panel="documentation">
+          <div class="svc-detail-img">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80" alt="Documentation" loading="lazy" />
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="svc-detail-tag">04 / Documentation</span>
+          </div>
+          <h4>India's documentation landscape managed end to end.</h4>
+          <p>A missing certificate can derail transactions worth crores. We manage the entire chain — collection, verification, processing, submission, and follow-up — without exception.</p>
+          <div class="svc-checks">
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Sale deeds, gift deeds, partitions</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Aadhaar, PAN, OCI/PIO assistance</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Mutation &amp; khata applications</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Sub-Registrar registration</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Stamp duty management</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Court document processing</span></div>
+          </div>
+          <a href="#contact" class="btn btn-ghost" style="align-self:flex-start;margin-top:8px">Discuss documentation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
-        <div class="svc-panel" id="svc-government" role="tabpanel">
-          <h3>Government &amp; Liaison Services</h3>
-          <p class="svc-desc">We navigate India's government offices, regulatory bodies, and administrative processes on your behalf, so bureaucracy never becomes your problem to solve from overseas.</p>
-          <dl class="svc-items">
-            <div class="svc-item"><dt>Approvals &amp; Licenses</dt><dd>Building approvals, land-use conversion, change-of-use permissions, and trade licenses, managed through established relationships with relevant authorities.</dd></div>
-            <div class="svc-item"><dt>Local Authority Coordination</dt><dd>Direct liaison with municipal corporations, development authorities, revenue departments, and panchayat offices across our coverage states.</dd></div>
-            <div class="svc-item"><dt>Utility Connections &amp; Transfers</dt><dd>Electricity, water, and gas connections, new applications, name transfers, metered billing reconciliation, and dispute resolution.</dd></div>
-            <div class="svc-item"><dt>Authorized Representation</dt><dd>Attending hearings, collecting orders, submitting applications, and appearing in official capacities as your authorized representative under Power of Attorney.</dd></div>
-          </dl>
-          <a href="#contact" class="svc-cta">Discuss government services <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <!-- 05 Government -->
+        <div class="svc-panel" data-panel="government">
+          <div class="svc-detail-img">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&q=80" alt="Government Liaison" loading="lazy" />
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="svc-detail-tag">05 / Government Liaison</span>
+          </div>
+          <h4>We navigate India's government offices so you don't have to.</h4>
+          <p>Regulatory bodies and administrative processes managed on your behalf — so bureaucracy never becomes your problem to solve from abroad.</p>
+          <div class="svc-checks">
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Building approvals &amp; licenses</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Municipal corporation liaison</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Revenue &amp; panchayat offices</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Utility connections &amp; transfers</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Authorized representation (PoA)</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Land-use conversion &amp; permissions</span></div>
+          </div>
+          <a href="#contact" class="btn btn-ghost" style="align-self:flex-start;margin-top:8px">Discuss government services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
-        <div class="svc-panel" id="svc-lifestyle" role="tabpanel">
-          <h3>Concierge &amp; Lifestyle Services</h3>
-          <p class="svc-desc">Beyond the core services, personalized support for every aspect of your India connection, at whatever scale the situation demands.</p>
-          <dl class="svc-items">
-            <div class="svc-item"><dt>Relocation Assistance</dt><dd>Full support for when you or family members relocate to or from India, logistics, housing search, setup, and administrative transitions.</dd></div>
-            <div class="svc-item"><dt>Property Setup</dt><dd>Interior furnishing coordination, appliance procurement, utility activation, and home-readiness preparation for your India property.</dd></div>
-            <div class="svc-item"><dt>Emergency Support</dt><dd>Immediate on-ground response for family emergencies, property crises, or time-sensitive legal matters, available around the clock.</dd></div>
-            <div class="svc-item"><dt>Custom Advisory</dt><dd>Complex or unusual NRI situations that fall outside standard categories, we assess, advise, and structure bespoke solutions accordingly.</dd></div>
-          </dl>
-          <a href="#contact" class="svc-cta">Discuss your situation <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <!-- 06 Lifestyle -->
+        <div class="svc-panel" data-panel="lifestyle">
+          <div class="svc-detail-img">
+            <img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=1200&q=80" alt="Concierge Services" loading="lazy" />
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <span class="svc-detail-tag">06 / Concierge &amp; Lifestyle</span>
+          </div>
+          <h4>Personalized support for every aspect of your India connection.</h4>
+          <p>Beyond the core services — bespoke support at whatever scale the situation demands, from relocation logistics to emergency response around the clock.</p>
+          <div class="svc-checks">
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Relocation assistance</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Property setup &amp; furnishing</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Emergency support (24/7)</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Custom advisory for complex cases</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Family support coordination</span></div>
+            <div class="svc-check"><svg class="svc-check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Travel &amp; logistics assistance</span></div>
+          </div>
+          <a href="#contact" class="btn btn-ghost" style="align-self:flex-start;margin-top:8px">Discuss your situation <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
+      </div><!-- /svc-detail -->
+    </div><!-- /services-layout -->
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAND
+============================================================ -->
+<section class="section" style="padding-top:0">
+  <div class="shell">
+    <div class="stats-band reveal">
+      <div>
+        <span class="mono" style="letter-spacing:0.1em">— BY THE NUMBERS</span>
+        <h2 class="h2" style="font-size:38px">
+          Ten years.<br/><em>One promise:</em><br/>accountability.
+        </h2>
+      </div>
+      <div class="stat-block">
+        <div class="num">2,000<em>+</em></div>
+        <div class="label">NRI families served since 2014</div>
+      </div>
+      <div class="stat-block">
+        <div class="num">40<em>+</em></div>
+        <div class="label">Countries our clients call home</div>
+      </div>
+      <div class="stat-block">
+        <div class="num">8</div>
+        <div class="label">Primary coverage states across India</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ======================================================
-     PROCESS
-====================================================== -->
-<section class="process" id="process">
-  <div class="wrap">
-    <p class="overline">How We Work</p>
-    <h2>A structured process.<br>Measurable outcomes.</h2>
+<!-- ============================================================
+     PROCESS / APPROACH
+============================================================ -->
+<section class="section" id="process" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">— How we work</div>
+        <h2 class="h2">A four-step engagement,<br/>built for <em>distance.</em></h2>
+      </div>
+      <p class="section-desc">
+        Every ServeNRI engagement begins the same way — with a written plan, signed off by you,
+        before we take any action. No surprises, no hidden fees, no decisions made without your input.
+        One relationship manager owns your case from day one.
+      </p>
+    </div>
+
     <div class="process-grid">
-      <div class="process-step">
-        <div class="ps-num">01</div>
-        <div class="ps-body">
-          <h3>Initial Consultation</h3>
-          <p>A detailed conversation, by phone, WhatsApp, or video call, to understand your situation in India and your objectives. No obligation, no fees at this stage.</p>
+      <div class="process-step reveal">
+        <div class="step-num">STEP 01</div>
+        <h4>Initial Consultation</h4>
+        <p>A detailed conversation — by phone, WhatsApp, or video call — to understand your situation in India and your objectives. No obligation, no fees at this stage.</p>
+        <div class="step-meta">Week 1 · Free</div>
+      </div>
+      <div class="process-step reveal d1">
+        <div class="step-num">STEP 02</div>
+        <h4>Assessment &amp; Proposal</h4>
+        <p>Our team assesses your property, legal, or financial situation and delivers a clear, itemized action plan with timelines, scope, and a transparent fee structure.</p>
+        <div class="step-meta">Week 2–3</div>
+      </div>
+      <div class="process-step reveal d2">
+        <div class="step-num">STEP 03</div>
+        <h4>Dedicated Manager Assigned</h4>
+        <p>You are assigned a single Relationship Manager who owns your case from start to finish — one accountable contact, not a rotating call center.</p>
+        <div class="step-meta">Week 4</div>
+      </div>
+      <div class="process-step reveal d3">
+        <div class="step-num">STEP 04</div>
+        <h4>Execution &amp; Reporting</h4>
+        <p>We execute the plan with regular progress updates, photo documentation, financial statements, and legal status reports delivered digitally on an agreed schedule.</p>
+        <div class="step-meta">Ongoing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT (Why ServeNRI)
+============================================================ -->
+<section class="section" id="about">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">— Our approach</div>
+        <h2 class="h2">Built on <em>accountability,</em><br/>not promises.</h2>
+      </div>
+      <p class="section-desc">
+        ServeNRI was founded by people who understood firsthand what it means to have property,
+        family, and obligations in India while living thousands of miles away. We built the
+        service we wish had existed — professional, transparent, and genuinely accountable
+        for outcomes.
+      </p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start" class="about-inner">
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div class="diff-item reveal" style="padding:24px 0;border-bottom:1px solid var(--line)">
+          <h4 style="font-family:'Newsreader',serif;font-weight:400;font-size:20px;margin-bottom:8px;letter-spacing:-0.01em">One-stop solution</h4>
+          <p style="color:var(--muted);font-size:14px;line-height:1.7">Property, legal, banking, documentation — all managed by one team, with one invoice, one point of contact. No coordination overhead for you.</p>
+        </div>
+        <div class="diff-item reveal d1" style="padding:24px 0;border-bottom:1px solid var(--line)">
+          <h4 style="font-family:'Newsreader',serif;font-weight:400;font-size:20px;margin-bottom:8px;letter-spacing:-0.01em">Verified on-ground network</h4>
+          <p style="color:var(--muted);font-size:14px;line-height:1.7">Our attorneys, CA firms, contractors, and government liaisons across 8 states are vetted and subject to our quality standards — not random referrals.</p>
+        </div>
+        <div class="diff-item reveal d2" style="padding:24px 0;border-bottom:1px solid var(--line)">
+          <h4 style="font-family:'Newsreader',serif;font-weight:400;font-size:20px;margin-bottom:8px;letter-spacing:-0.01em">Radical transparency</h4>
+          <p style="color:var(--muted);font-size:14px;line-height:1.7">Regular reports with photos, receipts, and financial summaries. You always know exactly what is happening with your India assets — and what it cost.</p>
+        </div>
+        <div class="diff-item reveal d3" style="padding:24px 0">
+          <h4 style="font-family:'Newsreader',serif;font-weight:400;font-size:20px;margin-bottom:8px;letter-spacing:-0.01em">India + USA presence</h4>
+          <p style="color:var(--muted);font-size:14px;line-height:1.7">Our Atlanta branch ensures someone is available in your time zone. The Jaipur headquarters handles everything on the ground in India.</p>
         </div>
       </div>
-      <div class="process-step">
-        <div class="ps-num">02</div>
-        <div class="ps-body">
-          <h3>Assessment &amp; Proposal</h3>
-          <p>Our team assesses your property, legal, or financial situation and delivers a clear, itemized action plan with timelines, scope, and transparent fee structure.</p>
+
+      <div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:28px" class="reveal">
+          <div style="padding:22px;background:var(--paper)">
+            <div style="font-family:'Newsreader',serif;font-size:30px;letter-spacing:-0.02em;color:var(--ink)">2,000<span style="color:var(--gold);font-size:18px">+</span></div>
+            <div style="font-size:12px;color:var(--muted-2);margin-top:4px;letter-spacing:0.04em">Families Served</div>
+          </div>
+          <div style="padding:22px;background:var(--paper)">
+            <div style="font-family:'Newsreader',serif;font-size:30px;letter-spacing:-0.02em;color:var(--ink)">8</div>
+            <div style="font-size:12px;color:var(--muted-2);margin-top:4px;letter-spacing:0.04em">States Coverage</div>
+          </div>
+          <div style="padding:22px;background:var(--paper)">
+            <div style="font-family:'Newsreader',serif;font-size:30px;letter-spacing:-0.02em;color:var(--ink)">40<span style="color:var(--gold);font-size:18px">+</span></div>
+            <div style="font-size:12px;color:var(--muted-2);margin-top:4px;letter-spacing:0.04em">Countries</div>
+          </div>
+          <div style="padding:22px;background:var(--paper)">
+            <div style="font-family:'Newsreader',serif;font-size:30px;letter-spacing:-0.02em;color:var(--ink)">10<span style="color:var(--gold);font-size:18px">+</span></div>
+            <div style="font-size:12px;color:var(--muted-2);margin-top:4px;letter-spacing:0.04em">Years in Operation</div>
+          </div>
         </div>
-      </div>
-      <div class="process-step">
-        <div class="ps-num">03</div>
-        <div class="ps-body">
-          <h3>Dedicated Manager Assigned</h3>
-          <p>You are assigned a single Relationship Manager who owns your case from start to finish, one accountable contact, not a rotating call center.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="ps-num">04</div>
-        <div class="ps-body">
-          <h3>Execution &amp; Reporting</h3>
-          <p>We execute the plan with regular progress updates, photo documentation, financial statements, and legal status reports delivered digitally on an agreed schedule.</p>
+
+        <div style="padding:22px 24px;border:1px solid rgba(184,146,42,0.3);border-radius:var(--radius-sm);background:var(--gold-soft)" class="reveal">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Primary Service States</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">
+            <span style="padding:4px 10px;border:1px solid var(--line-2);border-radius:2px;font-size:12px;color:var(--ink-2)">Rajasthan</span>
+            <span style="padding:4px 10px;border:1px solid var(--line-2);border-radius:2px;font-size:12px;color:var(--ink-2)">Punjab</span>
+            <span style="padding:4px 10px;border:1px solid var(--line-2);border-radius:2px;font-size:12px;color:var(--ink-2)">Gujarat</span>
+            <span style="padding:4px 10px;border:1px solid var(--line-2);border-radius:2px;font-size:12px;color:var(--ink-2)">Delhi &amp; NCR</span>
+            <span style="padding:4px 10px;border:1px solid var(--line-2);border-radius:2px;font-size:12px;color:var(--ink-2)">Haryana</span>
+            <span style="padding:4px 10px;border:1px solid var(--line-2);border-radius:2px;font-size:12px;color:var(--ink-2)">Madhya Pradesh</span>
+          </div>
+          <p style="font-size:12px;color:var(--muted);font-style:italic;line-height:1.5">Services available in other Indian states on a case-by-case basis.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ======================================================
-     ABOUT / WHY US
-====================================================== -->
-<section class="about" id="about">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="about-left">
-        <p class="overline light">Our Approach</p>
-        <h2>Built on accountability,<br>not promises.</h2>
-        <p class="about-body">ServeNRI was founded by people who understood firsthand what it means to have property, family, and obligations in India while living thousands of miles away. We built the service we wish had existed, one that is professional, transparent, and genuinely accountable for outcomes, not just effort.</p>
-        <div class="about-stats">
-          <div class="ab-stat">
-            <strong>2,000+</strong>
-            <span>Families Served</span>
-          </div>
-          <div class="ab-stat">
-            <strong>8 States</strong>
-            <span>Primary Coverage</span>
-          </div>
-          <div class="ab-stat">
-            <strong>40+</strong>
-            <span>Countries</span>
-          </div>
-          <div class="ab-stat">
-            <strong>10 Years</strong>
-            <span>In Operation</span>
-          </div>
-        </div>
-      </div>
-      <div class="about-right">
-        <div class="diff-list">
-          <div class="diff-item">
-            <h4>One-stop solution</h4>
-            <p>Property, legal, banking, documentation, all managed by one team, with one invoice, one point of contact. No coordination overhead for you.</p>
-          </div>
-          <div class="diff-item">
-            <h4>Verified on-ground network</h4>
-            <p>Our attorneys, CA firms, contractors, and government liaisons across 8 states are vetted and subject to our quality standards, not random referrals.</p>
-          </div>
-          <div class="diff-item">
-            <h4>Radical transparency</h4>
-            <p>Regular reports with photos, receipts, and financial summaries. You always know exactly what is happening with your India assets, and what it cost.</p>
-          </div>
-          <div class="diff-item">
-            <h4>India + USA presence</h4>
-            <p>Our Atlanta branch ensures someone is available in your time zone. The Jaipur headquarters handles everything on the ground in India.</p>
-          </div>
-        </div>
-        <div class="coverage-block">
-          <p class="coverage-label">Primary Service States</p>
-          <div class="coverage-states">
-            <span>Rajasthan</span><span>Punjab</span><span>Gujarat</span>
-            <span>Delhi &amp; NCR</span><span>Haryana</span><span>Madhya Pradesh</span>
-          </div>
-          <p class="coverage-note">Services in other Indian states available on a case-by-case basis.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================================================
+<!-- ============================================================
      TESTIMONIALS
-====================================================== -->
-<section class="testimonials" id="testimonials">
-  <div class="wrap">
-    <p class="overline">Client Perspective</p>
-    <h2>What our clients say.</h2>
-    <div class="testimonials-grid">
+============================================================ -->
+<section class="section" id="testimonials">
+  <div class="shell">
+    <div class="section-head reveal" style="margin-bottom:40px">
+      <div>
+        <div class="section-eyebrow">— In their words</div>
+        <h2 class="h2">What our clients<br/><em>actually say.</em></h2>
+      </div>
+      <p class="section-desc">
+        We let outcomes speak. These are real clients who trusted us with property matters, legal
+        disputes, and complex NRI situations — resolved from across time zones.
+      </p>
+    </div>
 
-      <div class="testimonial">
-        <div class="t-mark">&ldquo;</div>
-        <p>We had a vacant flat in Jaipur for three years that we simply didn't know how to manage from California. ServeNRI placed a vetted tenant within six weeks, handled all paperwork, and now we receive rent in our US account every month with a full statement. Genuinely hands-off for us.</p>
-        <div class="t-rule"></div>
-        <div class="t-attr">
-          <strong>Rajesh &amp; Sunita Sharma</strong>
-          <span>San Jose, California &nbsp;&middot;&nbsp; Property Management</span>
-        </div>
+    <div class="testimonial-wrap" id="testimonialWrap">
+      <!-- Photo column -->
+      <div class="testi-photo" id="testiPhoto">
+        <img id="testiImg" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Client" loading="lazy" />
       </div>
 
-      <div class="testimonial">
-        <div class="t-mark">&ldquo;</div>
-        <p>An encroachment dispute on my father's property in Punjab had been unresolved for two years, we'd tried and failed with local contacts. ServeNRI's legal team resolved it in under four months. Their established relationships with local authorities made all the difference.</p>
-        <div class="t-rule"></div>
-        <div class="t-attr">
-          <strong>Amarjit Kaur</strong>
-          <span>Toronto, Canada &nbsp;&middot;&nbsp; Legal Services</span>
+      <!-- Quote column -->
+      <div>
+        <div class="section-eyebrow" style="margin-bottom:24px">— Client story <span id="testiCounter" style="color:var(--muted-2)">01 / 04</span></div>
+
+        <div id="testiItems">
+          <div class="testi-item active" data-idx="0">
+            <p class="testi-quote"><span class="open-q">"</span>We had a vacant flat in Jaipur for three years that we simply didn't know how to manage from California. ServeNRI placed a vetted tenant within six weeks, handled all paperwork, and now we receive rent in our US account every month with a full statement. Genuinely hands-off for us.</p>
+            <div class="testi-meta">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&q=80');background-size:cover;background-position:center"></div>
+              <div>
+                <div class="testi-name">Rajesh &amp; Sunita Sharma</div>
+                <div class="testi-role">San Jose, California &nbsp;·&nbsp; Property Management</div>
+              </div>
+              <div class="testi-nav">
+                <button class="testi-arrow" id="testiPrev" aria-label="Previous testimonial">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="testi-arrow" id="testiNext" aria-label="Next testimonial">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item" data-idx="1">
+            <p class="testi-quote"><span class="open-q">"</span>An encroachment dispute on my father's property in Punjab had been unresolved for two years — we'd tried and failed with local contacts. ServeNRI's legal team resolved it in under four months. Their established relationships with local authorities made all the difference.</p>
+            <div class="testi-meta">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80');background-size:cover;background-position:center"></div>
+              <div>
+                <div class="testi-name">Amarjit Kaur</div>
+                <div class="testi-role">Toronto, Canada &nbsp;·&nbsp; Legal Services</div>
+              </div>
+              <div class="testi-nav">
+                <button class="testi-arrow" aria-label="Previous" onclick="testimonialPrev()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="testi-arrow" aria-label="Next" onclick="testimonialNext()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item" data-idx="2">
+            <p class="testi-quote"><span class="open-q">"</span>Selling our ancestral home in Rajasthan from Dubai was something I had dreaded for years. ServeNRI managed the valuation, found the buyer, handled all documentation and registration. I flew in only to execute the final sale deed. The process was remarkably smooth.</p>
+            <div class="testi-meta">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80');background-size:cover;background-position:center"></div>
+              <div>
+                <div class="testi-name">Priya &amp; Manish Gupta</div>
+                <div class="testi-role">Dubai, UAE &nbsp;·&nbsp; Property Sale</div>
+              </div>
+              <div class="testi-nav">
+                <button class="testi-arrow" aria-label="Previous" onclick="testimonialPrev()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="testi-arrow" aria-label="Next" onclick="testimonialNext()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-item" data-idx="3">
+            <p class="testi-quote"><span class="open-q">"</span>Setting up a Power of Attorney for a property matter in Delhi from the UK felt impossibly complicated. ServeNRI walked me through the apostille process step by step and handled everything on the India side. The speed and professionalism were exceptional.</p>
+            <div class="testi-meta">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80');background-size:cover;background-position:center"></div>
+              <div>
+                <div class="testi-name">Vikram Nair</div>
+                <div class="testi-role">London, United Kingdom &nbsp;·&nbsp; Power of Attorney</div>
+              </div>
+              <div class="testi-nav">
+                <button class="testi-arrow" aria-label="Previous" onclick="testimonialPrev()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="testi-arrow" aria-label="Next" onclick="testimonialNext()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="testimonial">
-        <div class="t-mark">&ldquo;</div>
-        <p>Selling our ancestral home in Rajasthan from Dubai was something I had dreaded for years. ServeNRI managed the valuation, found the buyer, handled all documentation and registration. I flew in only to execute the final sale deed. The process was remarkably smooth.</p>
-        <div class="t-rule"></div>
-        <div class="t-attr">
-          <strong>Priya &amp; Manish Gupta</strong>
-          <span>Dubai, UAE &nbsp;&middot;&nbsp; Property Sale</span>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="t-mark">&ldquo;</div>
-        <p>Setting up a Power of Attorney for a property matter in Delhi from the UK felt impossibly complicated. ServeNRI walked me through the apostille process step by step and handled everything on the India side. The speed and professionalism were exceptional.</p>
-        <div class="t-rule"></div>
-        <div class="t-attr">
-          <strong>Vikram Nair</strong>
-          <span>London, United Kingdom &nbsp;&middot;&nbsp; Power of Attorney</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ======================================================
+<!-- ============================================================
+     INSIGHTS / RESOURCES
+============================================================ -->
+<section class="section" id="insights" style="padding-top:0">
+  <div class="shell">
+    <div class="section-head reveal" style="margin-bottom:40px">
+      <div>
+        <div class="section-eyebrow">— Resources</div>
+        <h2 class="h2">Practical guides for<br/><em>the NRI maze.</em></h2>
+      </div>
+      <p class="section-desc">
+        Plain-language guides on property, legal, and financial matters most frequently
+        faced by NRI families — no jargon, no filler.
+      </p>
+    </div>
+
+    <div class="insights-grid">
+      <article class="insight-card reveal">
+        <div class="insight-img">
+          <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=900&q=80" alt="Property Management Guide" loading="lazy" />
+        </div>
+        <div class="insight-body">
+          <div class="insight-meta">Property · Guide</div>
+          <h3 class="insight-title">The NRI's complete guide to managing Indian property from abroad</h3>
+          <div class="insight-foot">
+            <span>Updated 2025</span>
+            <span class="insight-read">
+              Read
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+      <article class="insight-card reveal d1">
+        <div class="insight-img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80" alt="Power of Attorney Guide" loading="lazy" />
+        </div>
+        <div class="insight-body">
+          <div class="insight-meta">Legal · 10 min read</div>
+          <h3 class="insight-title">Power of Attorney for NRIs: apostille, registration, and common pitfalls</h3>
+          <div class="insight-foot">
+            <span>Updated 2025</span>
+            <span class="insight-read">
+              Read
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+      <article class="insight-card reveal d2">
+        <div class="insight-img">
+          <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=900&q=80" alt="Repatriation Guide" loading="lazy" />
+        </div>
+        <div class="insight-body">
+          <div class="insight-meta">Banking · Checklist</div>
+          <h3 class="insight-title">How to repatriate rental income and sale proceeds from India compliantly</h3>
+          <div class="insight-foot">
+            <span>Updated 2025</span>
+            <span class="insight-read">
+              Read
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="section" id="faq" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="shell">
+    <div class="section-head reveal" style="margin-bottom:48px">
+      <div>
+        <div class="section-eyebrow">— Common questions</div>
+        <h2 class="h2">Frequently asked<br/><em>questions.</em></h2>
+      </div>
+      <p class="section-desc">
+        Answers to the questions we hear most from NRI families at the start of their
+        journey with us. Don't see yours? Reach out — we respond within 24 hours.
+      </p>
+    </div>
+
+    <div class="faq-cols">
+      <div class="faq-col">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How do you handle rent collection remotely?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>We manage the entire tenant relationship — screening, lease execution, rent collection, and remittance. Rent is collected monthly and transferred to your designated account with a full digital statement.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can you sell my property while I'm abroad?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>Yes. With a properly executed Power of Attorney, we manage the entire sale — valuation, buyer sourcing, negotiation, documentation, and registration. Most clients only need to be present for the final deed execution, or not at all if the POA covers it.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How does Power of Attorney work for NRIs?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>You execute a POA in your country of residence, have it notarized and apostilled, then courier it to India for registration. We guide you through every step and then act as your authorized representative once it is active.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can you handle property disputes while I'm overseas?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>Absolutely. We work with experienced property attorneys across our coverage states. Via your Power of Attorney, we can attend hearings, file applications, and manage the full legal process — keeping you informed at every stage.</p></div>
+        </div>
+      </div>
+      <div class="faq-col">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How can I repatriate rental income overseas?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>Rental income from Indian property can be repatriated via NRO accounts under FEMA regulations. We handle TDS deductions, compliance filings, and coordinate with your bank to ensure smooth and compliant international transfers.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do you cover all states in India?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>Our primary coverage includes Rajasthan, Punjab, Gujarat, Madhya Pradesh, Delhi &amp; NCR, and Haryana. For other states, we assess each situation individually — contact us and we will tell you honestly whether and how we can help.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How will I communicate with my Relationship Manager?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>Your Relationship Manager is reachable via WhatsApp, email, phone, and scheduled video calls. We send proactive updates on a pre-agreed schedule — you are never left waiting for news about your case.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How is pricing structured?
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" hidden><p>Pricing depends on service type and scope. We provide fully transparent, itemized quotes after the initial consultation — no hidden fees. Ongoing management services are monthly retainer; transactional services are typically fixed-fee.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      CONTACT
-====================================================== -->
-<section class="contact" id="contact">
-  <div class="wrap">
+============================================================ -->
+<section class="section" id="contact">
+  <div class="shell">
+
+    <!-- CTA Band -->
+    <div class="cta-band reveal">
+      <div>
+        <span class="mono" style="letter-spacing:0.1em;font-size:11px">— Ready when you are</span>
+        <h2 class="h2" style="margin-top:16px">A 30-minute call.<br/><em>No fees, no obligation.</em></h2>
+        <p>Tell us what you own in India, where you live, and what's been keeping you up at night. We'll tell you — honestly — whether and how we can help.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/18122230199" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          WhatsApp Us
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="tel:+18122230199" class="btn btn-ghost">+1 (812) 223-0199</a>
+        <a href="tel:+919829046473" class="btn btn-ghost">+91 98290 46473</a>
+      </div>
+      <div class="cta-watermark">India</div>
+    </div>
+
+    <!-- Contact grid -->
     <div class="contact-grid">
       <div class="contact-left">
-        <p class="overline">Get in Touch</p>
-        <h2>Let's discuss<br>your situation.</h2>
-        <p class="contact-body">Our first consultation is always complimentary. Share your situation and we will assess how we can help, no obligations, no sales pressure.</p>
+        <div class="section-eyebrow">— Get in touch</div>
+        <h2 class="h2" style="margin:16px 0 16px">Let's discuss<br/><em>your situation.</em></h2>
+        <p class="contact-body">Our first consultation is always complimentary. Share your situation and we will assess how we can help — no obligations, no sales pressure.</p>
 
         <div class="contact-offices">
           <div class="co-entry">
@@ -425,26 +836,26 @@
 
         <div class="contact-channels">
           <a href="mailto:infoservenri@gmail.com" class="co-channel">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M1.5 5l6.5 4.5L14.5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M1.5 5l6.5 4.5L14.5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
             infoservenri@gmail.com
           </a>
           <a href="https://wa.me/18122230199" class="co-channel wa" target="_blank" rel="noopener noreferrer">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 8.5c.5 1.8 2.8 2.8 4.5 2l1.5.5-.5-1.5C10.5 8 9.5 6.5 8 6c-1-.4-2.5.5-3.5 2.5z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 8.5c.5 1.8 2.8 2.8 4.5 2l1.5.5-.5-1.5C10.5 8 9.5 6.5 8 6c-1-.4-2.5.5-3.5 2.5z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
             WhatsApp (preferred channel)
           </a>
         </div>
 
-        <p class="contact-hours">India: Mon–Sat, 9 AM – 7 PM IST &nbsp;&middot;&nbsp; USA: Mon–Fri, 9 AM – 6 PM EST</p>
+        <p class="contact-hours">India: Mon–Sat, 9 AM – 7 PM IST &nbsp;·&nbsp; USA: Mon–Fri, 9 AM – 6 PM EST</p>
       </div>
 
       <div class="contact-right">
         <form class="contact-form" id="contactForm" novalidate>
-          <!-- Web3Forms: get your access key at web3forms.com using infoservenri@gmail.com -->
           <input type="hidden" name="access_key" value="8fd78c31-519f-48d5-819d-06dd4a23d0cf" />
           <input type="hidden" name="subject" value="New Consultation Request | ServeNRI" />
           <input type="hidden" name="from_name" value="ServeNRI Website" />
           <input type="hidden" name="redirect" value="false" />
           <input type="checkbox" name="botcheck" style="display:none" />
+
           <h3>Request a Consultation</h3>
           <p class="cf-sub">We respond within 24 hours.</p>
 
@@ -494,14 +905,17 @@
             <label for="cf-message">Describe Your Situation <abbr title="required">*</abbr></label>
             <textarea id="cf-message" name="message" rows="4" required placeholder="Briefly describe what you need help with..."></textarea>
           </div>
-          <button type="submit" class="btn-primary btn-full">Submit Request</button>
+          <button type="submit" class="btn btn-primary btn-full">
+            Submit Request
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
           <p class="cf-privacy">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><rect x="1" y="5.5" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1"/><path d="M4 5.5V3.5a2 2 0 014 0v2" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><rect x="1" y="5.5" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1"/><path d="M4 5.5V3.5a2 2 0 014 0v2" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
             All information is held in strict confidence and never shared with third parties.
           </p>
         </form>
         <div class="cf-success" id="cfSuccess" hidden>
-          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true"><circle cx="22" cy="22" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M12 22l7 7 13-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M12 22l7 7 13-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <h3>Request Received</h3>
           <p>Our team will reach out within 24 hours via email and WhatsApp.</p>
         </div>
@@ -510,120 +924,78 @@
   </div>
 </section>
 
-<!-- ======================================================
-     FAQ
-====================================================== -->
-<section class="faq" id="faq">
-  <div class="wrap">
-    <div class="faq-header">
-      <p class="overline">Common Questions</p>
-      <h2>Frequently asked questions.</h2>
-    </div>
-    <div class="faq-cols">
-      <div class="faq-col">
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">How do you handle rent collection remotely? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>We manage the entire tenant relationship, screening, lease execution, rent collection, and remittance. Rent is collected monthly and transferred to your designated account with a full digital statement.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Can you sell my property while I'm abroad? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>Yes. With a properly executed Power of Attorney, we manage the entire sale, valuation, buyer sourcing, negotiation, documentation, and registration. Most clients only need to be present for the final deed execution, or not at all if the POA covers it.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">How does Power of Attorney work for NRIs? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>You execute a POA in your country of residence, have it notarized and apostilled, then courier it to India for registration. We guide you through every step and then act as your authorized representative once it is active.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Can you handle property disputes while I'm overseas? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>Absolutely. We work with experienced property attorneys across our coverage states. Via your Power of Attorney, we can attend hearings, file applications, and manage the full legal process, keeping you informed at every stage.</p></div>
-        </div>
-      </div>
-      <div class="faq-col">
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">How can I repatriate rental income overseas? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>Rental income from Indian property can be repatriated via NRO accounts under FEMA regulations. We handle TDS deductions, compliance filings, and coordinate with your bank to ensure smooth and compliant international transfers.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Do you cover all states in India? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>Our primary coverage includes Rajasthan, Punjab, Gujarat, Madhya Pradesh, Delhi &amp; NCR, and Haryana. For other states, we assess each situation individually, contact us and we will tell you honestly whether and how we can help.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">How will I communicate with my Relationship Manager? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>Your Relationship Manager is reachable via WhatsApp, email, phone, and scheduled video calls. We send proactive updates on a pre-agreed schedule, you are never left waiting for news about your case.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">How is pricing structured? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <div class="faq-a" hidden><p>Pricing depends on service type and scope. We provide fully transparent, itemized quotes after the initial consultation, no hidden fees. Ongoing management services are monthly retainer; transactional services are typically fixed-fee.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================================================
+<!-- ============================================================
      FOOTER
-====================================================== -->
-<footer class="site-footer">
-  <div class="footer-main">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div class="footer-brand-col">
-          <a href="#home" class="brand">
-            <svg class="brand-mark" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M10 1C10 1 6 7.5 6 10a4 4 0 008 0c0-2.5-4-9-4-9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M1.5 10h17" stroke="currentColor" stroke-width="1.5"/></svg>
-            <span class="brand-name">Serve<em>NRI</em></span>
-          </a>
-          <p class="footer-desc">Your trusted partner in India, wherever you are. From property to paperwork, we handle it all so you don't have to.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="https://wa.me/919829046473" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">wa</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="#services">Property Management</a></li>
-            <li><a href="#services">Legal &amp; Compliance</a></li>
-            <li><a href="#services">Banking &amp; Financial</a></li>
-            <li><a href="#services">Documentation</a></li>
-            <li><a href="#services">Government Liaison</a></li>
-            <li><a href="#services">Concierge Services</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#process">How We Work</a></li>
-            <li><a href="#testimonials">Client Stories</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Offices</h5>
-          <div class="footer-offices">
-            <div class="fo-entry">
-              <strong>India, Headquarters</strong>
-              <span>Jaipur, Rajasthan, India</span>
-              <a href="tel:+919829046473">+91 98290 46473</a>
-            </div>
-            <div class="fo-entry">
-              <strong>USA, Branch Office</strong>
-              <span>Atlanta, Georgia, USA</span>
-              <a href="tel:+18122230199">+1 (812) 223-0199</a>
-            </div>
-            <a href="mailto:infoservenri@gmail.com" class="fo-email">infoservenri@gmail.com</a>
-          </div>
+============================================================ -->
+<footer class="site-footer" id="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand" style="display:inline-flex;margin-bottom:16px">
+          <div class="brand-mark">S</div>
+          <span class="brand-name">Serve<em>NRI</em></span>
+        </a>
+        <p class="footer-tagline">Your trusted on-ground partner in India — wherever you are in the world. From property to paperwork, we handle it so you don't have to.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="https://wa.me/18122230199" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">wa</a>
         </div>
       </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <div class="footer-links">
+          <a href="#services">Property Management</a>
+          <a href="#services">Legal &amp; Compliance</a>
+          <a href="#services">Banking &amp; Financial</a>
+          <a href="#services">Documentation</a>
+          <a href="#services">Government Liaison</a>
+          <a href="#services">Concierge Services</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <div class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#process">How We Work</a>
+          <a href="#testimonials">Client Stories</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <div class="footer-links">
+          <a href="#insights">Guides</a>
+          <a href="#faq">FAQ</a>
+          <a href="#">Newsletter</a>
+          <a href="#contact">Free Consultation</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="fo-entry">
+          <strong>India, Headquarters</strong>
+          <span>Jaipur, Rajasthan, India</span>
+          <a href="tel:+919829046473">+91 98290 46473</a>
+        </div>
+        <div class="fo-entry">
+          <strong>USA, Branch Office</strong>
+          <span>Atlanta, Georgia, USA</span>
+          <a href="tel:+18122230199">+1 (812) 223-0199</a>
+        </div>
+        <a href="mailto:infoservenri@gmail.com" class="fo-email">infoservenri@gmail.com</a>
+      </div>
     </div>
-  </div>
-  <div class="footer-base">
-    <div class="wrap">
-      <p>&copy; 2024 ServeNRI. All rights reserved.</p>
+
+    <div class="footer-bottom">
+      <div>&copy; 2024 ServeNRI. All rights reserved.</div>
       <div class="footer-legal">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
@@ -635,12 +1007,12 @@
 
 <!-- WhatsApp sticky -->
 <a href="https://wa.me/18122230199" class="wa-sticky" id="waSticky" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M6 12c.7 2.5 3.5 3.5 5.5 2.7l2.2.8-.8-2.2C13.5 11 12 9 10 8.3 8.3 7.6 6.2 9.5 6 12z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+  <svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M6 12c.7 2.5 3.5 3.5 5.5 2.7l2.2.8-.8-2.2C13.5 11 12 9 10 8.3 8.3 7.6 6.2 9.5 6 12z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
   <span>WhatsApp</span>
 </a>
 
 <button class="back-top" id="backTop" aria-label="Back to top">
-  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
 <script src="script.js"></script>

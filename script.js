@@ -1,35 +1,38 @@
 'use strict';
 
-// ===== NAVBAR =====
+// ===== NAV SCROLL STATE =====
 const nav = document.getElementById('siteNav');
 const waSticky = document.getElementById('waSticky');
 const backTop = document.getElementById('backTop');
 
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY > 40;
-  nav.classList.toggle('scrolled', scrolled);
-  waSticky.classList.toggle('visible', scrolled);
-  backTop.classList.toggle('visible', scrolled);
+  nav?.classList.toggle('scrolled', scrolled);
+  waSticky?.classList.toggle('visible', scrolled);
+  backTop?.classList.toggle('visible', scrolled);
 }, { passive: true });
 
-backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+backTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 // ===== MOBILE NAV =====
 const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
+const navLinks = document.getElementById('navLinks');
+const navCta = document.getElementById('navCta');
 
-navToggle.addEventListener('click', () => {
+navToggle?.addEventListener('click', () => {
   const open = navToggle.classList.toggle('open');
-  navMenu.classList.toggle('open', open);
-  navToggle.setAttribute('aria-expanded', open);
+  navLinks?.classList.toggle('open', open);
+  navCta?.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
   document.body.style.overflow = open ? 'hidden' : '';
 });
 
-navMenu.querySelectorAll('a').forEach(link => {
+navLinks?.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    navToggle.classList.remove('open');
-    navMenu.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle?.classList.remove('open');
+    navLinks.classList.remove('open');
+    navCta?.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   });
 });
@@ -48,20 +51,70 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 // ===== SERVICES TABS =====
-const svcTabs = document.querySelectorAll('.svc-tab');
-const svcPanels = document.querySelectorAll('.svc-panel');
+const svcRows = document.querySelectorAll('.svc-row[data-svc]');
+const svcPanels = document.querySelectorAll('.svc-panel[data-panel]');
 
-svcTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const id = tab.dataset.svc;
-    svcTabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
-    svcPanels.forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    tab.setAttribute('aria-selected', 'true');
-    const panel = document.getElementById('svc-' + id);
-    if (panel) panel.classList.add('active');
+function activateSvc(id) {
+  svcRows.forEach(r => {
+    const active = r.dataset.svc === id;
+    r.dataset.active = String(active);
+    r.setAttribute('aria-selected', String(active));
+  });
+  svcPanels.forEach(p => {
+    p.classList.toggle('active', p.dataset.panel === id);
+  });
+}
+
+svcRows.forEach(row => {
+  row.addEventListener('click', () => activateSvc(row.dataset.svc));
+  row.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      activateSvc(row.dataset.svc);
+    }
   });
 });
+
+// ===== AUDIENCE PILLS =====
+document.querySelectorAll('.pill[data-audience]').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.pill[data-audience]').forEach(p => delete p.dataset.active);
+    pill.dataset.active = 'true';
+  });
+});
+
+// ===== TESTIMONIALS =====
+const testiItems = document.querySelectorAll('.testi-item');
+const testiImg = document.getElementById('testiImg');
+const testiCounter = document.getElementById('testiCounter');
+
+const testiImgSrcs = [
+  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80',
+  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80',
+  'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&q=80',
+  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80',
+];
+
+let testiCurrent = 0;
+
+function goToTesti(idx) {
+  testiCurrent = (idx + testiItems.length) % testiItems.length;
+  testiItems.forEach((item, i) => item.classList.toggle('active', i === testiCurrent));
+  if (testiImg) testiImg.src = testiImgSrcs[testiCurrent];
+  if (testiCounter) {
+    const total = testiItems.length;
+    testiCounter.textContent = `0${testiCurrent + 1} / 0${total}`;
+  }
+}
+
+function testimonialPrev() { goToTesti(testiCurrent - 1); }
+function testimonialNext() { goToTesti(testiCurrent + 1); }
+
+window.testimonialPrev = testimonialPrev;
+window.testimonialNext = testimonialNext;
+
+document.getElementById('testiPrev')?.addEventListener('click', testimonialPrev);
+document.getElementById('testiNext')?.addEventListener('click', testimonialNext);
 
 // ===== FAQ ACCORDION =====
 document.querySelectorAll('.faq-q').forEach(btn => {
@@ -70,7 +123,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     const answer = item.querySelector('.faq-a');
     const open = btn.getAttribute('aria-expanded') === 'true';
 
-    // Close all in the same column
     item.closest('.faq-col').querySelectorAll('.faq-item').forEach(i => {
       i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
       i.querySelector('.faq-a').hidden = true;
@@ -84,10 +136,8 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 });
 
 // ===== CONTACT FORM — Web3Forms =====
-// Setup: visit web3forms.com → enter infoservenri@gmail.com → verify → copy access key
-//        Replace "YOUR_WEB3FORMS_ACCESS_KEY" in the HTML hidden input with your key.
 const form = document.getElementById('contactForm');
-const success = document.getElementById('cfSuccess');
+const cfSuccess = document.getElementById('cfSuccess');
 
 if (form) {
   form.addEventListener('submit', async e => {
@@ -109,16 +159,15 @@ if (form) {
 
       if (json.success) {
         form.hidden = true;
-        success.hidden = false;
+        if (cfSuccess) cfSuccess.hidden = false;
       } else {
         throw new Error(json.message || 'Submission failed');
       }
-    } catch (err) {
-      // Fallback: open mailto so the message still reaches the inbox
-      const name = form.querySelector('[name="name"]').value;
-      const email = form.querySelector('[name="email"]').value;
-      const service = form.querySelector('[name="service"]').value;
-      const message = form.querySelector('[name="message"]').value;
+    } catch (_) {
+      const name = form.querySelector('[name="name"]')?.value ?? '';
+      const email = form.querySelector('[name="email"]')?.value ?? '';
+      const service = form.querySelector('[name="service"]')?.value ?? '';
+      const message = form.querySelector('[name="message"]')?.value ?? '';
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\n\n${message}`);
       window.location.href = `mailto:infoservenri@gmail.com?subject=NRI%20Connect%20Consultation%20Request&body=${body}`;
       btn.textContent = originalLabel;
@@ -128,18 +177,6 @@ if (form) {
 }
 
 // ===== SCROLL REVEAL =====
-const revealEls = document.querySelectorAll(
-  '.process-step, .diff-item, .testimonial, .svc-item, .faq-item, .ab-stat, .co-entry'
-);
-
-revealEls.forEach((el, i) => {
-  el.classList.add('reveal');
-  // Stagger siblings within the same parent
-  const siblings = Array.from(el.parentElement.querySelectorAll('.reveal'));
-  const idx = siblings.indexOf(el);
-  if (idx > 0 && idx < 5) el.classList.add('d' + idx);
-});
-
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -149,4 +186,4 @@ const revealObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.08 });
 
-revealEls.forEach(el => revealObserver.observe(el));
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
