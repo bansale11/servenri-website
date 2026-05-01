@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Everything NRIs need to know about Power of Attorney for India — types, notarization, apostille, registration, and the most common mistakes to avoid." />
+  <title>Power of Attorney for NRIs: Apostille, Registration &amp; Common Pitfalls — ServeNRI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .article-hero { padding: 80px 0 56px; border-bottom: 1px solid var(--line); }
+    .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+    .article-tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); background: var(--bg-2); border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px; }
+    .article-read-time { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted-2); letter-spacing: 0.06em; }
+    .article-title { font-family: 'Newsreader', serif; font-size: clamp(28px, 5vw, 48px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; color: var(--ink); margin-bottom: 20px; max-width: 760px; }
+    .article-lead { font-size: 18px; line-height: 1.7; color: var(--muted); max-width: 680px; font-weight: 300; }
+    .article-body { padding: 64px 0 80px; }
+    .article-layout { display: grid; grid-template-columns: 220px 1fr; gap: 64px; align-items: start; }
+    .article-toc { position: sticky; top: 88px; }
+    .toc-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 2px; }
+    .toc-list a { font-size: 13px; color: var(--muted); text-decoration: none; display: block; padding: 5px 0 5px 12px; border-left: 2px solid var(--line); line-height: 1.4; transition: color 0.15s, border-color 0.15s; }
+    .toc-list a:hover { color: var(--ink); border-color: var(--accent); }
+    .prose h2 { font-family: 'Newsreader', serif; font-size: 26px; font-weight: 400; letter-spacing: -0.01em; color: var(--ink); margin: 56px 0 16px; padding-top: 8px; border-top: 1px solid var(--line); }
+    .prose h3 { font-family: 'Newsreader', serif; font-size: 20px; font-weight: 400; color: var(--ink-2); margin: 32px 0 12px; }
+    .prose p { font-size: 16px; line-height: 1.8; color: var(--ink-2); margin-bottom: 18px; }
+    .prose ul, .prose ol { padding-left: 20px; margin-bottom: 20px; }
+    .prose li { font-size: 16px; line-height: 1.75; color: var(--ink-2); margin-bottom: 8px; }
+    .prose strong { color: var(--ink); font-weight: 600; }
+    .prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    .callout { background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 18px 22px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 15px; color: var(--ink-2); }
+    .callout-warn { border-left-color: var(--gold); background: var(--gold-soft); }
+    .step-grid { display: flex; flex-direction: column; gap: 0; margin: 28px 0; }
+    .step-box { background: var(--paper); border: 1px solid var(--line); border-radius: 0; padding: 24px 28px; display: flex; gap: 20px; }
+    .step-box:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+    .step-box:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+    .step-box + .step-box { border-top: none; }
+    .step-num-badge { flex-shrink: 0; width: 32px; height: 32px; background: var(--ink-bg); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; margin-top: 2px; }
+    .step-content h3 { font-family: 'Newsreader', serif; font-size: 18px; font-weight: 400; color: var(--ink); margin: 0 0 8px; }
+    .step-content p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .country-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+    .country-table th { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-2); text-align: left; padding: 10px 16px; border-bottom: 2px solid var(--line); }
+    .country-table td { padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--ink-2); vertical-align: top; }
+    .country-table tr:last-child td { border-bottom: none; }
+    .country-table tr:hover td { background: var(--bg-2); }
+    .badge-yes { color: #166534; background: #dcfce7; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+    .badge-no { color: #991b1b; background: #fee2e2; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+    .article-cta { background: var(--ink-bg); border-radius: var(--radius); padding: 40px 48px; margin-top: 64px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .article-cta h3 { font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px; color: #fff; margin: 0 0 8px; }
+    .article-cta p { color: rgba(255,255,255,0.6); font-size: 15px; margin: 0; }
+    @media (max-width: 768px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-toc { display: none; }
+      .article-cta { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="shell nav-inner">
+    <a href="../index.html#home" class="brand">
+      <div class="brand-mark">S</div>
+      <span class="brand-name">Serve<em>NRI</em></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#process">Process</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#testimonials">Clients</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta" id="navCta">
+      <a href="../index.html#contact" class="btn btn-primary">Schedule a Call
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="shell">
+    <div class="article-meta">
+      <span class="article-tag">Legal</span>
+      <span class="article-read-time">10 min read · Updated 2025</span>
+    </div>
+    <h1 class="article-title">Power of Attorney for NRIs: Apostille, Registration, and Common Pitfalls</h1>
+    <p class="article-lead">A Power of Attorney is the single most important legal document an NRI can have for India matters. Without one, nearly every significant action — signing documents, managing property, appearing before authorities — requires your physical presence. Here is the complete process, country by country.</p>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="shell">
+    <div class="article-layout">
+
+      <aside class="article-toc" aria-label="Table of contents">
+        <div class="toc-label">In this guide</div>
+        <ul class="toc-list">
+          <li><a href="#what">What is a POA and why you need one</a></li>
+          <li><a href="#types">General vs. Specific POA</a></li>
+          <li><a href="#steps">Step-by-step process</a></li>
+          <li><a href="#countries">Country-by-country notes</a></li>
+          <li><a href="#scope">What a POA can and cannot do</a></li>
+          <li><a href="#pitfalls">Common mistakes</a></li>
+          <li><a href="#revoke">Revoking a POA</a></li>
+        </ul>
+      </aside>
+
+      <article class="prose">
+
+        <h2 id="what">What Is a Power of Attorney and Why NRIs Need One</h2>
+        <p>A Power of Attorney (POA) is a legal document by which you (the "principal") authorise another person (the "agent" or "attorney-in-fact") to act on your behalf in specific or general legal and financial matters. The agent does not need to be a lawyer — it can be a family member, a trusted friend, or a professional firm.</p>
+        <p>For NRIs, a POA is essential because Indian legal processes — property registration, court appearances, bank account operations, government applications — almost universally require in-person execution or authorised representation. International travel is expensive, time-consuming, and often impossible on short notice. A valid POA eliminates that constraint.</p>
+
+        <div class="callout">
+          <p><strong>The core benefit:</strong> A properly executed and registered POA allows your authorised representative in India to sign documents, attend hearings, execute transactions, and manage affairs exactly as you would — without you leaving your country of residence.</p>
+        </div>
+
+        <h2 id="types">General vs. Specific Power of Attorney</h2>
+        <p>Choosing the right type of POA is critical. A mismatch between the POA's scope and the action required is one of the most common reasons transactions fail at the last moment.</p>
+
+        <h3>General Power of Attorney (GPA)</h3>
+        <p>A GPA grants broad authority to the agent across a wide range of matters — managing property, operating bank accounts, signing contracts, filing tax returns, and more. It is the most flexible option but carries higher risk if the agent is not completely trustworthy, as it grants significant power.</p>
+        <p><strong>Best for:</strong> Long-term property management, comprehensive NRI affairs management, situations where the full scope of required actions is uncertain.</p>
+
+        <h3>Specific / Limited Power of Attorney (SPA)</h3>
+        <p>A Specific POA authorises the agent for one defined purpose — for example, "to sell the property at [address] and execute the sale deed." It expires once that purpose is fulfilled.</p>
+        <p><strong>Best for:</strong> A single, defined transaction such as selling a property, executing a loan, or registering a specific document. Lower risk, more appropriate when the agent is not closely known to you.</p>
+
+        <div class="callout callout-warn">
+          <p><strong>Critical:</strong> The POA must specifically authorise every action you want the agent to take. Sub-Registrar offices and banks routinely reject POAs with missing clauses. Have an Indian advocate review the draft before you sign it.</p>
+        </div>
+
+        <h2 id="steps">Step-by-Step: Creating a POA from Abroad</h2>
+
+        <div class="step-grid">
+          <div class="step-box">
+            <div class="step-num-badge">1</div>
+            <div class="step-content">
+              <h3>Draft the POA in India</h3>
+              <p>Engage a qualified Indian advocate to draft the POA on your behalf. The document must be governed by Indian law and contain specific clauses for every action you intend the agent to take. Do not use generic templates — a property sale POA must reference the specific property and include clauses for registration, stamp duty payment, and possession handover.</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num-badge">2</div>
+            <div class="step-content">
+              <h3>Print and sign the POA in your country of residence</h3>
+              <p>The drafted POA (on stamp paper, typically) is sent to you abroad (electronically). You print it, review it carefully, and sign it in the presence of a Notary Public in your country of residence. The Notary certifies your identity and signature. Ensure the Notary's details and seal are clearly affixed.</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num-badge">3</div>
+            <div class="step-content">
+              <h3>Apostille OR Embassy Attestation</h3>
+              <p>This step authenticates the Notary's seal for use in India. Which process applies depends on your country of residence. <strong>Apostille:</strong> For countries that are signatories to the Hague Apostille Convention (USA, UK, Canada, Australia, most of Europe, UAE). The apostille is obtained from a designated government authority in your country. <strong>Embassy Attestation:</strong> For countries not in the Hague Convention. The document is attested by the Indian Embassy or High Commission in your country of residence.</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num-badge">4</div>
+            <div class="step-content">
+              <h3>Courier the original to India</h3>
+              <p>Send the original apostilled or attested POA to your agent in India via a tracked courier service (DHL, FedEx, or similar). Customs declarations should describe the contents accurately. Keep a scanned copy of the fully executed document for your records.</p>
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-num-badge">5</div>
+            <div class="step-content">
+              <h3>Adjudication and Registration in India</h3>
+              <p>Upon receipt, the POA must be adjudicated (stamp duty assessed and paid) and registered at the local Sub-Registrar office. This step is mandatory for the POA to be legally valid for property transactions. The registration itself takes 1–2 hours once all documents are in order. Your agent executes this step. Total timeline from courier receipt to registered POA: typically 5–10 working days.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="countries">Country-by-Country Notes</h2>
+        <table class="country-table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Hague Convention</th>
+              <th>Authentication Route</th>
+              <th>Typical Timeline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>USA</strong></td>
+              <td><span class="badge-yes">Yes</span></td>
+              <td>Notarize → Apostille from Secretary of State (state level)</td>
+              <td>1–2 weeks</td>
+            </tr>
+            <tr>
+              <td><strong>United Kingdom</strong></td>
+              <td><span class="badge-yes">Yes</span></td>
+              <td>Notarize → Apostille from FCDO (Foreign, Commonwealth &amp; Development Office)</td>
+              <td>1–3 weeks</td>
+            </tr>
+            <tr>
+              <td><strong>Canada</strong></td>
+              <td><span class="badge-yes">Yes</span></td>
+              <td>Notarize → Apostille from Global Affairs Canada</td>
+              <td>2–4 weeks</td>
+            </tr>
+            <tr>
+              <td><strong>Australia</strong></td>
+              <td><span class="badge-yes">Yes</span></td>
+              <td>Notarize → Apostille from DFAT</td>
+              <td>1–3 weeks</td>
+            </tr>
+            <tr>
+              <td><strong>UAE / Dubai</strong></td>
+              <td><span class="badge-yes">Yes</span> (since 2024)</td>
+              <td>Notarize → Apostille from Ministry of Foreign Affairs</td>
+              <td>3–7 days</td>
+            </tr>
+            <tr>
+              <td><strong>Singapore</strong></td>
+              <td><span class="badge-yes">Yes</span></td>
+              <td>Notarize → Apostille from Singapore Academy of Law</td>
+              <td>1–2 weeks</td>
+            </tr>
+            <tr>
+              <td><strong>Kuwait / Saudi Arabia / Bahrain / Qatar / Oman</strong></td>
+              <td><span class="badge-no">No</span></td>
+              <td>Notarize → Indian Embassy/Consulate attestation</td>
+              <td>2–4 weeks</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="scope">What a POA Can and Cannot Do</h2>
+
+        <h3>What a valid, registered POA allows your agent to do:</h3>
+        <ul>
+          <li>Execute and register sale or purchase deeds for property</li>
+          <li>Operate bank accounts (if specifically authorised)</li>
+          <li>File documents with government offices and courts</li>
+          <li>Collect rent and sign rental agreements</li>
+          <li>Apply for and receive documents (Aadhaar, PAN updates, etc.)</li>
+          <li>Appear before the Sub-Registrar for document registration</li>
+          <li>Handle tax filings and interact with the Income Tax department</li>
+        </ul>
+
+        <h3>What a POA cannot do:</h3>
+        <ul>
+          <li>Create a Will on your behalf</li>
+          <li>Authorise the agent to sub-delegate the POA (unless specifically included and permitted)</li>
+          <li>Act beyond the scope described in the document — every significant action must be explicitly listed</li>
+          <li>Override your personal obligations (the POA holder acts as your representative, not a substitute for your legal identity)</li>
+        </ul>
+
+        <h2 id="pitfalls">Common Mistakes — and How to Avoid Them</h2>
+
+        <h3>1. Missing clauses for the required transaction</h3>
+        <p>This is the most frequent problem. A POA drafted for "property management" may not include authority to "sell and register a sale deed." When the time comes to sell, the POA is invalid for the transaction. <strong>Fix:</strong> Have an Indian advocate review the draft against your specific intended use before signing.</p>
+
+        <h3>2. Apostille from the wrong authority</h3>
+        <p>In the USA, apostilles are issued at the state level (by the Secretary of State of the state where the Notary is located), not federally. A document notarized in California must be apostilled by the California Secretary of State, not the US Department of State. <strong>Fix:</strong> Confirm the correct issuing authority for your state or country before submitting.</p>
+
+        <h3>3. Delay in India-side registration</h3>
+        <p>An unregistered POA has limited legal validity for property transactions. Many people assume the apostilled POA is sufficient on its own. It is not — it must be registered at a Sub-Registrar office in India. <strong>Fix:</strong> Ensure your agent in India registers the document within a reasonable time of receipt.</p>
+
+        <h3>4. Using the POA holder after the POA has expired</h3>
+        <p>Some POAs are time-limited; others expire upon the completion of the stated purpose. Acting on an expired POA renders the action voidable. <strong>Fix:</strong> Specify a long validity period if the POA is for general use, and track the expiry date.</p>
+
+        <h3>5. Granting a GPA to an untrustworthy person</h3>
+        <p>A General POA grants significant authority. There are well-documented cases of POA holders misusing their authority — selling property without the principal's knowledge, taking loans against the property, or simply disappearing. <strong>Fix:</strong> Grant a GPA only to a person you trust completely, ideally with independent legal safeguards. For transactions, a Specific POA is preferable.</p>
+
+        <h2 id="revoke">Revoking a Power of Attorney</h2>
+        <p>A POA can be revoked at any time by the principal, provided you are mentally competent. The revocation process:</p>
+        <ol>
+          <li>Execute a Revocation Deed in the same manner as the original POA (signed, notarized, apostilled/attested)</li>
+          <li>Register the revocation at the same Sub-Registrar office where the original was registered</li>
+          <li>Notify the agent of the revocation in writing (registered post and WhatsApp/email for documentation)</li>
+          <li>Notify any third parties (banks, counterparties) who may be relying on the POA</li>
+        </ol>
+        <p>An unregistered revocation does not protect against an agent who claims to act in good faith without notice of the revocation. Registration is the only way to create constructive notice.</p>
+
+        <div class="article-cta">
+          <div>
+            <h3>Need help with a Power of Attorney for India?</h3>
+            <p>ServeNRI guides you through every step — draft review, India-side registration, and authorised representation once it's active.</p>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary" style="white-space:nowrap">
+            Speak to Our Legal Team
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-bottom" style="border-top:none; padding-top:0">
+      <div>&copy; 2025 ServeNRI. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="../index.html">Back to Home</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => {
+    nav?.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  const navCta = document.getElementById('navCta');
+  navToggle?.addEventListener('click', () => {
+    const open = navToggle.classList.toggle('open');
+    navLinks?.classList.toggle('open', open);
+    navCta?.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+</script>
+</body>
+</html>

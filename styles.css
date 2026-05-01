@@ -611,6 +611,8 @@ input, select, textarea { font-family: inherit; }
   color: var(--muted);
 }
 .insight-read { display: inline-flex; align-items: center; gap: 5px; color: var(--accent); }
+.insight-card-link { display: flex; flex-direction: column; flex: 1; text-decoration: none; color: inherit; }
+.insight-preview { font-size: 13px; color: var(--muted); line-height: 1.65; margin: 0 0 16px; }
 
 /* ===== FAQ ===== */
 .faq-cols {

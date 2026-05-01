@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A practical checklist for NRIs on how to repatriate rental income and property sale proceeds from India compliantly under FEMA — TDS, Form 15CA/CB, NRO accounts, and more." />
+  <title>How to Repatriate Rental Income &amp; Sale Proceeds from India Compliantly — ServeNRI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .article-hero { padding: 80px 0 56px; border-bottom: 1px solid var(--line); }
+    .article-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+    .article-tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); background: var(--bg-2); border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px; }
+    .article-read-time { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted-2); letter-spacing: 0.06em; }
+    .article-title { font-family: 'Newsreader', serif; font-size: clamp(28px, 5vw, 48px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; color: var(--ink); margin-bottom: 20px; max-width: 760px; }
+    .article-lead { font-size: 18px; line-height: 1.7; color: var(--muted); max-width: 680px; font-weight: 300; }
+    .article-body { padding: 64px 0 80px; }
+    .article-layout { display: grid; grid-template-columns: 220px 1fr; gap: 64px; align-items: start; }
+    .article-toc { position: sticky; top: 88px; }
+    .toc-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 2px; }
+    .toc-list a { font-size: 13px; color: var(--muted); text-decoration: none; display: block; padding: 5px 0 5px 12px; border-left: 2px solid var(--line); line-height: 1.4; transition: color 0.15s, border-color 0.15s; }
+    .toc-list a:hover { color: var(--ink); border-color: var(--accent); }
+    .prose h2 { font-family: 'Newsreader', serif; font-size: 26px; font-weight: 400; letter-spacing: -0.01em; color: var(--ink); margin: 56px 0 16px; padding-top: 8px; border-top: 1px solid var(--line); }
+    .prose h3 { font-family: 'Newsreader', serif; font-size: 20px; font-weight: 400; color: var(--ink-2); margin: 32px 0 12px; }
+    .prose p { font-size: 16px; line-height: 1.8; color: var(--ink-2); margin-bottom: 18px; }
+    .prose ul, .prose ol { padding-left: 20px; margin-bottom: 20px; }
+    .prose li { font-size: 16px; line-height: 1.75; color: var(--ink-2); margin-bottom: 8px; }
+    .prose strong { color: var(--ink); font-weight: 600; }
+    .prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    .callout { background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 18px 22px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 15px; color: var(--ink-2); }
+    .callout-warn { border-left-color: var(--gold); background: var(--gold-soft); }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+    .compare-table th { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-2); text-align: left; padding: 10px 16px; border-bottom: 2px solid var(--line); background: var(--bg-2); }
+    .compare-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); color: var(--ink-2); vertical-align: top; line-height: 1.6; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td:first-child { font-weight: 600; color: var(--ink); width: 30%; }
+    .checklist { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+    .checklist li { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; color: var(--ink-2); line-height: 1.6; }
+    .checklist li::before { content: ''; flex-shrink: 0; margin-top: 4px; width: 18px; height: 18px; border: 1.5px solid var(--line-2); border-radius: 4px; background: var(--paper); display: inline-block; }
+    .flow-steps { display: flex; flex-direction: column; gap: 0; margin: 28px 0; counter-reset: flow-counter; }
+    .flow-step { display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); counter-increment: flow-counter; }
+    .flow-step:last-child { border-bottom: none; }
+    .flow-num { flex-shrink: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted-2); letter-spacing: 0.1em; padding-top: 2px; min-width: 48px; }
+    .flow-step h3 { font-family: 'Newsreader', serif; font-size: 18px; font-weight: 400; color: var(--ink); margin: 0 0 8px; }
+    .flow-step p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .article-cta { background: var(--ink-bg); border-radius: var(--radius); padding: 40px 48px; margin-top: 64px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .article-cta h3 { font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px; color: #fff; margin: 0 0 8px; }
+    .article-cta p { color: rgba(255,255,255,0.6); font-size: 15px; margin: 0; }
+    @media (max-width: 768px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-toc { display: none; }
+      .article-cta { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="shell nav-inner">
+    <a href="../index.html#home" class="brand">
+      <div class="brand-mark">S</div>
+      <span class="brand-name">Serve<em>NRI</em></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#process">Process</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#testimonials">Clients</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta" id="navCta">
+      <a href="../index.html#contact" class="btn btn-primary">Schedule a Call
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="shell">
+    <div class="article-meta">
+      <span class="article-tag">Banking</span>
+      <span class="article-tag">Checklist</span>
+      <span class="article-read-time">12 min read · Updated 2025</span>
+    </div>
+    <h1 class="article-title">How to Repatriate Rental Income and Sale Proceeds from India Compliantly</h1>
+    <p class="article-lead">Bringing money from India to your overseas account is allowed — but only under specific FEMA rules, with proper documentation. This guide explains the correct process for both rental income and property sale proceeds, including TDS, Form 15CA/CB, and the annual repatriation limit.</p>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="shell">
+    <div class="article-layout">
+
+      <aside class="article-toc" aria-label="Table of contents">
+        <div class="toc-label">In this guide</div>
+        <ul class="toc-list">
+          <li><a href="#fema">Understanding FEMA</a></li>
+          <li><a href="#accounts">NRO vs NRE accounts</a></li>
+          <li><a href="#rental">Repatriating rental income</a></li>
+          <li><a href="#tds">TDS on rental income</a></li>
+          <li><a href="#sale">Selling property: capital gains</a></li>
+          <li><a href="#proceeds">Repatriating sale proceeds</a></li>
+          <li><a href="#forms">Form 15CA and 15CB</a></li>
+          <li><a href="#limit">Annual repatriation limit</a></li>
+          <li><a href="#mistakes">Common compliance mistakes</a></li>
+          <li><a href="#checklist">Repatriation checklist</a></li>
+        </ul>
+      </aside>
+
+      <article class="prose">
+
+        <h2 id="fema">Understanding FEMA: The Basic Framework</h2>
+        <p>The Foreign Exchange Management Act (FEMA) 1999 governs all foreign exchange transactions in India, including the repatriation of funds abroad by NRIs. Unlike its predecessor FERA, violations of FEMA are civil offences, not criminal — but the penalties are significant, and non-compliance can freeze your assets or block future remittances.</p>
+        <p>The key principle: money earned in India from Indian assets (rent, dividends, business income) can be repatriated, but only after:</p>
+        <ul>
+          <li>All applicable Indian taxes are paid or deducted at source (TDS)</li>
+          <li>Proper documentation is filed with the Income Tax department</li>
+          <li>The transfer is routed through the correct bank accounts</li>
+        </ul>
+
+        <h2 id="accounts">The Two Types of NRI Bank Accounts</h2>
+        <p>Understanding which account to use for which purpose is the foundation of FEMA compliance.</p>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>NRO Account</th>
+              <th>NRE Account</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Name</td>
+              <td>Non-Resident Ordinary</td>
+              <td>Non-Resident External</td>
+            </tr>
+            <tr>
+              <td>Currency</td>
+              <td>Indian Rupees (INR)</td>
+              <td>Indian Rupees (INR, converted from foreign currency)</td>
+            </tr>
+            <tr>
+              <td>Deposits From</td>
+              <td>India-source income (rent, dividends, sale proceeds)</td>
+              <td>Foreign earnings remitted to India from abroad</td>
+            </tr>
+            <tr>
+              <td>Repatriation</td>
+              <td>Up to USD 1 million per FY (after tax compliance)</td>
+              <td>Fully and freely repatriable</td>
+            </tr>
+            <tr>
+              <td>Interest Taxable</td>
+              <td>Yes — TDS applicable</td>
+              <td>No — exempt from Indian income tax</td>
+            </tr>
+            <tr>
+              <td>Joint Account</td>
+              <td>With another NRI or resident Indian</td>
+              <td>Only with another NRI</td>
+            </tr>
+            <tr>
+              <td>Use for rental income</td>
+              <td>Yes — mandatory</td>
+              <td>No — not allowed</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout">
+          <p><strong>Remember:</strong> All India-source income — rent, property sale proceeds, dividends from Indian companies — must first be credited to your NRO account. It cannot go directly to an NRE account or overseas.</p>
+        </div>
+
+        <h2 id="rental">Repatriating Rental Income: The Process</h2>
+        <p>For routine monthly rental income, the repatriation process is relatively straightforward once your NRO account is set up correctly:</p>
+
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-num">STEP 01</div>
+            <div>
+              <h3>Tenant credits rent to your NRO account</h3>
+              <p>Your tenant should transfer rent directly to your NRO account. If they are paying rent above ₹50,000/month, they must first deduct TDS at 31.2% and remit only the net amount. They are also required to deposit the TDS with the government and issue you a TDS certificate (Form 16A).</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">STEP 02</div>
+            <div>
+              <h3>Obtain CA certificate (Form 15CB)</h3>
+              <p>Before transferring funds abroad, you need a Chartered Accountant to certify in Form 15CB that all applicable taxes have been paid or deducted. The CA reviews your income, tax liability, and available credits (TDS already deducted) and issues the certificate. This is required for each repatriation transaction above ₹5 lakhs.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">STEP 03</div>
+            <div>
+              <h3>File Form 15CA with Income Tax portal</h3>
+              <p>Form 15CA is a self-declaration filed online on the Income Tax portal, based on the CA's Form 15CB. It declares the nature of the payment, the amount, and the taxes paid. Your bank requires a copy of this before processing the international transfer.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">STEP 04</div>
+            <div>
+              <h3>Submit to your NRO bank for wire transfer</h3>
+              <p>Provide the bank with Form 15CA (filled), Form 15CB (CA certificate), your passport, and the bank's own repatriation application form (A2 form). The bank processes the international wire transfer, typically within 2–5 working days.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="tds">TDS on Rental Income: What NRI Landlords Must Know</h2>
+        <p>This is one of the most frequently misunderstood areas. The obligation to deduct TDS falls on the <em>tenant</em>, not the landlord — but the consequences of non-deduction affect both parties.</p>
+
+        <h3>When Does TDS Apply?</h3>
+        <ul>
+          <li><strong>Monthly rent above ₹50,000:</strong> Tenant must deduct TDS at <strong>31.2%</strong> (30% base + 4% cess) on every payment to an NRI landlord</li>
+          <li><strong>Monthly rent ₹50,000 or below:</strong> No TDS deduction required under Section 194-IB (the simpler rule for individual tenants)</li>
+        </ul>
+
+        <h3>Consequences of Non-Deduction</h3>
+        <p>If a tenant fails to deduct TDS when required, they become an "assessee in default" and can face:</p>
+        <ul>
+          <li>Interest at 1% per month on the undeducted amount from the date it was due</li>
+          <li>Penalty equal to the amount of TDS that should have been deducted</li>
+          <li>In some cases, the tenant may also be unable to claim the rental expense as a business deduction</li>
+        </ul>
+        <p>As the NRI landlord, you are still liable to pay income tax on the rental income even if TDS was not deducted. The shortfall becomes your tax liability, not a windfall.</p>
+
+        <div class="callout callout-warn">
+          <p><strong>Practical advice:</strong> Inform your tenant explicitly of their TDS obligation when negotiating the lease. Many tenants — especially individual residential tenants — are unaware of this rule. Build it into the lease agreement as a clause. A well-informed tenant is a compliant one.</p>
+        </div>
+
+        <h2 id="sale">Selling Property as an NRI: Capital Gains Tax</h2>
+        <p>When you sell Indian property, the proceeds are subject to Indian Capital Gains Tax before repatriation. The rate depends on how long you held the property.</p>
+
+        <h3>Long-Term Capital Gains (LTCG) — Held over 2 years</h3>
+        <p>LTCG is taxed at <strong>12.5%</strong> (as of FY 2024-25, post-Budget 2024 revision) without indexation benefit, or <strong>20% with indexation</strong> (cost inflation index adjustment) if you opt for the indexed route. The indexed route is typically more beneficial for properties held for many years.</p>
+
+        <h3>Short-Term Capital Gains (STCG) — Held 2 years or less</h3>
+        <p>STCG is taxed at your applicable income tax slab rate, which for NRIs is typically 30% (plus surcharge and cess) on Indian income above the basic exemption.</p>
+
+        <h3>TDS on Property Sale — The Buyer's Obligation</h3>
+        <p>Buyers of NRI-owned property are legally required to deduct TDS at <strong>20% of the full sale value</strong> (not the gain — the entire sale price) before paying the seller. This is a source of significant surprise for NRI sellers.</p>
+
+        <p><strong>Example:</strong> Property sold for ₹1 crore. Buyer deducts ₹20 lakhs as TDS and pays you ₹80 lakhs. You pay actual capital gains tax when filing returns and claim a refund of excess TDS if the actual tax was less than ₹20 lakhs. The refund process takes 6–18 months.</p>
+
+        <p>Alternatively, you can apply to the Income Tax Assessing Officer for a Lower TDS Certificate (under Section 197) before the sale is executed. If approved, the buyer deducts TDS only on the actual taxable gain, not the full sale value — dramatically improving your cash flow at sale.</p>
+
+        <h2 id="proceeds">Repatriating Sale Proceeds</h2>
+        <p>Repatriating property sale proceeds is similar to rental income but involves larger amounts and additional documentation requirements.</p>
+        <p>Requirements for repatriation of sale proceeds:</p>
+        <ul>
+          <li>The property must have been originally purchased in compliance with FEMA (i.e., through an NRO/NRE account or inward remittance, not from cash held in India)</li>
+          <li>All capital gains taxes must be paid before repatriation</li>
+          <li>The amount repatriated cannot exceed the original purchase price (in foreign currency) plus documented improvement costs — the "cost" constraint applies specifically to the repatriated amount</li>
+          <li>Form 15CA (Part C, requiring 15CB) must be filed and submitted to the bank</li>
+        </ul>
+
+        <h2 id="forms">Form 15CA and 15CB: Explained Simply</h2>
+
+        <h3>Form 15CB</h3>
+        <p>A certificate issued by a <strong>Chartered Accountant</strong>. The CA verifies that applicable taxes have been deducted and paid, reviews the nature of the income, and certifies the remittance details. Required for foreign remittances (other than specific exempt categories) where the amount exceeds ₹5 lakhs in a financial year.</p>
+
+        <h3>Form 15CA</h3>
+        <p>A <strong>self-declaration</strong> filed online by the remitter (or their authorised representative) on the Income Tax portal. It has four parts; Part C is the most commonly used for property-related remittances and requires Form 15CB to have been obtained first. The bank requires a copy before processing the transfer.</p>
+
+        <div class="callout">
+          <p><strong>Process:</strong> CA issues 15CB first → you file 15CA (Part C) based on the 15CB → submit both to the bank along with the A2 form → bank processes the international transfer.</p>
+        </div>
+
+        <h2 id="limit">The Annual Repatriation Limit</h2>
+        <p>Under FEMA, NRIs can repatriate up to <strong>USD 1 million per financial year</strong> (April to March) from their NRO accounts. This limit covers all types of India-source income combined: rental income, property sale proceeds, dividends, and so on.</p>
+        <p>If you have a high-value property sale or multiple properties generating significant rental income, it is possible to approach this limit. In such cases, speak with a FEMA-qualified CA about structuring the timing of remittances across financial years.</p>
+        <p>Amounts above USD 1 million in a single financial year require specific RBI approval, which is case-by-case and not guaranteed.</p>
+
+        <h2 id="mistakes">Common Compliance Mistakes</h2>
+
+        <h3>1. Crediting rent directly to an NRE account</h3>
+        <p>India-source income cannot go into an NRE account. It must first go to an NRO account. Banks increasingly flag such credits as violations. Keep the accounts correctly separated.</p>
+
+        <h3>2. Skipping Form 15CA/CB for smaller transactions</h3>
+        <p>Many NRIs assume small transfers do not require documentation. FEMA compliance is not threshold-dependent for NRI-to-overseas transfers from NRO accounts — the documentation requirement applies regardless of amount (with certain specific exemptions).</p>
+
+        <h3>3. Not filing Indian income tax returns</h3>
+        <p>NRIs who have India-source income above the basic exemption limit (₹2.5 lakhs per year for older FY regimes) are required to file Indian income tax returns. Non-filing triggers penalties and interest, and can also complicate future repatriation requests if the Income Tax department queries undisclosed income.</p>
+
+        <h3>4. Missing the Lower TDS Certificate before a property sale</h3>
+        <p>Applying for a Lower TDS Certificate takes 4–6 weeks. Most NRI sellers discover this option only after the sale is agreed, when there is no time to apply. Plan ahead — apply at least 6–8 weeks before the anticipated sale date.</p>
+
+        <h3>5. Not maintaining documentation of the original purchase</h3>
+        <p>To repatriate sale proceeds, you need to demonstrate that the property was originally purchased with funds that complied with FEMA. If you purchased the property before becoming an NRI (i.e., as a resident Indian), this is generally straightforward. If you purchased as an NRI, retain all bank statements and transfer records from the original purchase indefinitely.</p>
+
+        <h2 id="checklist">Repatriation Checklist</h2>
+        <p>Use this before initiating any repatriation from India:</p>
+        <ul class="checklist">
+          <li>NRO account is set up and operational at an Indian bank</li>
+          <li>Rental income has been credited to NRO account (not NRE)</li>
+          <li>TDS has been deducted by tenant (if rent &gt; ₹50,000/month) or you have confirmed it is not applicable</li>
+          <li>TDS certificates (Form 16A) have been collected from the tenant for the financial year</li>
+          <li>Indian income tax return has been filed for the relevant financial year</li>
+          <li>Any tax refund claimed and received (or offset against TDS credit)</li>
+          <li>CA has issued Form 15CB for the intended remittance amount</li>
+          <li>Form 15CA has been filed online on the Income Tax portal</li>
+          <li>Bank's A2 form completed and submitted</li>
+          <li>Annual repatriation limit (USD 1 million) not exceeded for the financial year</li>
+        </ul>
+
+        <div class="callout callout-warn">
+          <p><strong>Note on tax treaties:</strong> India has Double Taxation Avoidance Agreements (DTAAs) with many countries including the USA, UK, Canada, UAE, and Australia. Under these treaties, you may be able to claim credit in your country of residence for taxes paid in India. Consult a tax professional in both countries to optimise your overall tax position.</p>
+        </div>
+
+        <div class="article-cta">
+          <div>
+            <h3>Need help with FEMA compliance and repatriation?</h3>
+            <p>ServeNRI coordinates TDS deduction, Form 15CA/CB, rent remittance, and bank liaison — so your India income reaches your overseas account cleanly.</p>
+          </div>
+          <a href="../index.html#contact" class="btn btn-primary" style="white-space:nowrap">
+            Speak to Our Financial Team
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-bottom" style="border-top:none; padding-top:0">
+      <div>&copy; 2025 ServeNRI. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="../index.html">Back to Home</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => {
+    nav?.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  const navCta = document.getElementById('navCta');
+  navToggle?.addEventListener('click', () => {
+    const open = navToggle.classList.toggle('open');
+    navLinks?.classList.toggle('open', open);
+    navCta?.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+</script>
+</body>
+</html>
