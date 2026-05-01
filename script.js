@@ -85,22 +85,13 @@ document.querySelectorAll('.pill[data-audience]').forEach(pill => {
 
 // ===== TESTIMONIALS =====
 const testiItems = document.querySelectorAll('.testi-item');
-const testiImg = document.getElementById('testiImg');
 const testiCounter = document.getElementById('testiCounter');
-
-const testiImgSrcs = [
-  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80',
-  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80',
-  'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&q=80',
-  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80',
-];
 
 let testiCurrent = 0;
 
 function goToTesti(idx) {
   testiCurrent = (idx + testiItems.length) % testiItems.length;
   testiItems.forEach((item, i) => item.classList.toggle('active', i === testiCurrent));
-  if (testiImg) testiImg.src = testiImgSrcs[testiCurrent];
   if (testiCounter) {
     const total = testiItems.length;
     testiCounter.textContent = `0${testiCurrent + 1} / 0${total}`;
