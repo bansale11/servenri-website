@@ -28,6 +28,7 @@
 
 /* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
@@ -785,6 +786,8 @@ input, select, textarea { font-family: inherit; }
 .cf-success svg { color: var(--success); }
 .cf-success h3 { font-family: "Newsreader", serif; font-weight: 400; font-size: 22px; }
 .cf-success p { font-size: 14px; color: var(--muted); max-width: 300px; line-height: 1.6; }
+.cf-error { display: none; font-size: 12px; color: #dc2626; margin-top: 4px; }
+.cf-error.visible { display: block; }
 
 /* ===== FOOTER ===== */
 .site-footer { padding: 80px 0 40px; }

@@ -137,6 +137,22 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
+// ===== EMAIL VALIDATION =====
+const emailInput = document.getElementById('cf-email');
+const emailError = document.getElementById('cfEmailError');
+const emailRe = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+
+function validateEmail() {
+  const valid = emailRe.test(emailInput.value.trim());
+  emailError?.classList.toggle('visible', emailInput.value.length > 0 && !valid);
+  return valid;
+}
+
+emailInput?.addEventListener('blur', validateEmail);
+emailInput?.addEventListener('input', () => {
+  if (emailError?.classList.contains('visible')) validateEmail();
+});
+
 // ===== CONTACT FORM — Web3Forms =====
 const form = document.getElementById('contactForm');
 const cfSuccess = document.getElementById('cfSuccess');
@@ -144,6 +160,7 @@ const cfSuccess = document.getElementById('cfSuccess');
 if (form) {
   form.addEventListener('submit', async e => {
     e.preventDefault();
+    if (emailInput && !validateEmail()) { emailInput.focus(); return; }
     if (!form.checkValidity()) { form.reportValidity(); return; }
 
     const btn = form.querySelector('button[type="submit"]');
@@ -160,8 +177,8 @@ if (form) {
       const json = await res.json();
 
       if (json.success) {
-        form.hidden = true;
-        if (cfSuccess) cfSuccess.hidden = false;
+        form.style.display = 'none';
+        if (cfSuccess) cfSuccess.style.display = 'flex';
       } else {
         throw new Error(json.message || 'Submission failed');
       }

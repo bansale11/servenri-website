@@ -865,7 +865,8 @@
           <div class="cf-row">
             <div class="cf-field">
               <label for="cf-email">Email Address <abbr title="required">*</abbr></label>
-              <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="your@email.com" />
+              <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="your@email.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+              <span class="cf-error" id="cfEmailError">Please enter a valid email address (e.g. name@example.com)</span>
             </div>
             <div class="cf-field">
               <label for="cf-phone">WhatsApp / Phone</label>
@@ -902,7 +903,7 @@
             All information is held in strict confidence and never shared with third parties.
           </p>
         </form>
-        <div class="cf-success" id="cfSuccess" hidden>
+        <div class="cf-success" id="cfSuccess" style="display:none">
           <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M12 22l7 7 13-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <h3>Request Received</h3>
           <p>Our team will reach out within 24 hours via email and WhatsApp.</p>
