@@ -75,14 +75,6 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
         </a>
       </div>
-      <div class="hero-pills">
-        <span class="mono" style="color:var(--muted); align-self:center; margin-right:4px; font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">I'M BASED IN —</span>
-        <button class="pill" data-active="true" data-audience="us">🇺🇸 USA</button>
-        <button class="pill" data-audience="uk">🇬🇧 UK & Europe</button>
-        <button class="pill" data-audience="gulf">🇦🇪 Gulf Region</button>
-        <button class="pill" data-audience="sg">🇸🇬 Singapore &amp; APAC</button>
-        <button class="pill" data-audience="ca">🇨🇦 Canada</button>
-      </div>
     </div>
 
     <!-- RIGHT: Collage -->
@@ -872,6 +864,7 @@
                 <option>Australia</option><option>UAE / Dubai</option><option>Singapore</option>
                 <option>New Zealand</option><option>Germany</option><option>Netherlands</option><option>Other</option>
               </select>
+              <input type="text" id="cf-country-other" name="country_other" placeholder="Enter your country" style="display:none;margin-top:8px" />
             </div>
           </div>
           <div class="cf-row">
@@ -897,7 +890,7 @@
               </select>
             </div>
             <div class="cf-field">
-              <label for="cf-location">Property Location (India)</label>
+              <label for="cf-location">Location (India)</label>
               <input type="text" id="cf-location" name="location" placeholder="City, State" />
             </div>
           </div>

@@ -107,6 +107,17 @@ window.testimonialNext = testimonialNext;
 document.getElementById('testiPrev')?.addEventListener('click', testimonialPrev);
 document.getElementById('testiNext')?.addEventListener('click', testimonialNext);
 
+// ===== COUNTRY "OTHER" FIELD =====
+const countrySelect = document.getElementById('cf-country');
+const countryOther = document.getElementById('cf-country-other');
+
+countrySelect?.addEventListener('change', () => {
+  const isOther = countrySelect.value === 'Other';
+  countryOther.style.display = isOther ? 'block' : 'none';
+  countryOther.required = isOther;
+  if (!isOther) countryOther.value = '';
+});
+
 // ===== FAQ ACCORDION =====
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
